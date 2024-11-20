@@ -1,0 +1,23 @@
+nav ul{
+  display:flex;
+
+}
+
+.nav-item a i{
+  font-size:2rem;
+  width:44px;
+  height:44px;
+  margin-top:40px;
+}
+
+.dropdown-menu{
+  margin-top:120px;
+  display:flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+.dropdown-open{
+  opacity:1;
+  visibility:visible;
+}

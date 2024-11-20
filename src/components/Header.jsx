@@ -1,6 +1,7 @@
 import React from 'react'
 import '../assets/styles/header.css'
 import Logo from './Logo'
+import Nav from './Nav'
 import SearchBar from './SearchBar'
 
 function Header() {
@@ -10,6 +11,8 @@ function Header() {
       <Logo />
       {/* Search Bar Area */}
       <SearchBar/>
+      {/* Nav Area */}
+      <Nav />
     </header>
   )
 }
