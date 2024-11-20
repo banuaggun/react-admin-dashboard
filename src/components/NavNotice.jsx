@@ -1,78 +1,50 @@
 import {useState} from 'react'
+import data from '../data/data.json'
 import '../assets/styles/nav.css'
+import { useRef } from 'react'
+import { useEffect } from 'react'
 
 const NavNotice = () => {
 
   const [dropdownOpen, setDropdownOpen] = useState(false)
+  const dropdownRef = useRef(null)
 
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen)
   }
+
+  const handleClickOutside = (event) => {
+    if(dropdownRef.current && !dropdownRef.current.contains(event.target)){
+      setDropdownOpen(false);
+    }
+  }
+  
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
   return (
     <div>
-    <li className='nav-item dropdown' onClick={toggleDropdown}>
+    <li className='nav-item dropdown' onClick={toggleDropdown} ref={dropdownRef}>
       <a href="#" className="nav-item-link nav-item-icon">
         <i className="ph ph-bell"></i>
         <span className="badge badge-number">4</span>
       </a>
      {dropdownOpen && (
        <ul className="dropdown-menu dropdown-open notifications">
-       <li className="dropdown-menu-header">
-         You have 4 notifications
-         <a href='#'>
-           <span className="badge">
-             View All
-           </span>
-         </a>
-       </li>
+         {data.notifications.map(notification => (
+           <li key={notification.id}>
+             <h4>{notification.title}</h4>
+             <p>{notification.text}</p>
+             <p>{notification.time}</p>
+             <hr/>
+            </li>
+         ))}
+      
 
-       <li>
-         <hr className='dropdown-divider' />
-       </li>
-       <li className="notification-item">
-         <i className="ph ph-warning-circle text-warning"></i>
-         <div>
-           <h4>Lorem İpsum</h4>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-           <p>30 min. ago</p>
-         </div>
-       </li>
-
-       <li>
-         <hr className='dropdown-divider' />
-       </li>
-       <li className="notification-item">
-         <i className="ph ph-warning-circle text-warning"></i>
-         <div>
-           <h4>Lorem İpsum</h4>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-           <p>50 min. ago</p>
-         </div>
-       </li>
-
-       <li>
-         <hr className='dropdown-divider' />
-       </li>
-       <li className="notification-item">
-         <i className="ph ph-warning-circle text-warning"></i>
-         <div>
-           <h4>Lorem İpsum</h4>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-           <p>1 hr. ago</p>
-         </div>
-       </li>
-
-       <li>
-         <hr className='dropdown-divider' />
-       </li>
-       <li className="notification-item">
-         <i className="ph ph-warning-circle text-warning"></i>
-         <div>
-           <h4>Lorem İpsum</h4>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-           <p>2 hr. ago</p>
-         </div>
-       </li>
 
        <li>
          <hr className='dropdown-divider' />
