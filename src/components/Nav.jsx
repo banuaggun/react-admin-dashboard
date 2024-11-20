@@ -2,7 +2,7 @@ import React from 'react'
 import '../assets/styles/nav.css'
 import NavNotice from './NavNotice'
 import NavMessage from './NavMessage'
-import NavAvatar from './NavAvatar'
+import NavUser from './NavUser'
 
 function Nav() {
   return (
@@ -10,7 +10,7 @@ function Nav() {
       <ul>
         <NavNotice />
         <NavMessage />
-        <NavAvatar />
+        <NavUser />
       </ul>
     </nav>
   )
