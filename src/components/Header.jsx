@@ -8,7 +8,9 @@ function Header() {
   return (
     <header id='header' className='header'>
       {/* Logo Area */}
+      <div>
       <Logo />
+      </div>
       {/* Search Bar Area */}
       <SearchBar/>
       {/* Nav Area */}
