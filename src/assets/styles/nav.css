@@ -1,23 +1,8 @@
-nav ul{
+nav{
   display:flex;
-
+  justify-content: flex-end;
+  margin-right:12px;
+  font-size:24px;
+  padding-right:8px;
 }
 
-.nav-item a i{
-  font-size:2rem;
-  width:44px;
-  height:44px;
-  margin-top:5px;
-}
-
-.dropdown-menu{
-  margin-top:0px;
-  display:flex;
-  flex-direction: column;
-  position: absolute;
-}
-
-.dropdown-open{
-  opacity:1;
-  visibility:visible;
-}

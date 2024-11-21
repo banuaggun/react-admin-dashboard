@@ -7,11 +7,9 @@ import NavUser from './NavUser'
 function Nav() {
   return (
     <nav>
-      <ul>
         <NavNotice />
         <NavMessage />
         <NavUser />
-      </ul>
     </nav>
   )
 }

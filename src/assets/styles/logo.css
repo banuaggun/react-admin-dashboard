@@ -1,28 +1,13 @@
-.logo{
-  line-height: 1;
-}
-
 .logo-area{
+  border:1px solid green;
   display:flex;
-  align-items: center;
+  justify-content: center;
+  margin:20px auto;
 }
 
-.logo img{
-  max-height:26px;
-  margin-right:6px;
-}
-
-.logo-area-content span{
-  text-decoration: none;
-  font-size:26px;
-  font-weight:700;
+.logo-area-content{
+  font-size:20px;
+  font-weight:600;
+  font-family: 'Merriweather', serif;
   color:var(--primary);
-  font-family: "Merriweather", serif;
-}
-
-
-@media (min-width:12000px){
-  .logo{
-    width:280px;
-  }
 }

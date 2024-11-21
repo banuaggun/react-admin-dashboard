@@ -10,6 +10,7 @@ function Logo() {
     <div className='logo-area'>
       <a href='/' className="logo-area-content">
         {/* <img src="" alt="" />*/}
+        <i className="ph ph-diamonds-four"></i>
         <span>Admin Dashboard</span>
       </a>
       <i className='ph ph-funnel-simple toggle-sidebar-btn' onClick={handleToggleSidebar}></i>
