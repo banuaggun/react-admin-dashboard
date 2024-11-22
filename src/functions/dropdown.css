@@ -1,7 +1,8 @@
-/* Dropdown.css */
 .dropdown {
   position: relative;
   display: inline-block;
+  border:1px solid green;
+  margin-right:10px;
 }
 
 .icon {
