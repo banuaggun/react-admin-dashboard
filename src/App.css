@@ -38,3 +38,28 @@ a:hover{
 h1, h2, h3, h4, h5, h6{
   font-family: "Merriweather", serif;
 }
+
+
+@media only screen and (min-width:300px) and (max-width:600px){
+  h1{
+    font-size:28px;
+  }
+  h2{
+    font-size:24px;
+  }
+  h3{
+    font-size:20px;
+  }
+  h4{
+    font-size:18px;
+  }
+  h5{
+    font-size:16px;
+  }
+  h6{
+    font-size: 14px;
+  }
+  p, span, small{
+    font-size:14px;
+  }
+}
