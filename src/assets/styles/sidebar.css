@@ -3,15 +3,12 @@
 }
 
 .toggle-button {
-  background-color: #333;
-  color: white;
+  background-color: transparent;
+  color: black;
   border: none;
   cursor: pointer;
-  padding: 10px;
-  position: fixed;
-  top: 60px;
-  left: 20px;
   z-index: 1000;
+  font-size:24px;
 }
 
 .sidebar {
@@ -20,7 +17,7 @@
   background-color: #333;
   color: white;
   position: fixed;
-  top: 98px;
+  top: 100px;
   left: 0;
   transform: translateX(-100%);
   transition: transform 0.3s ease;
