@@ -2,19 +2,36 @@ import React from 'react'
 import '../assets/styles/header.css'
 import Logo from './Logo'
 import Nav from './Nav'
-import SearchBar from './SearchBar'
+import Sidebar from './Sidebar'
 
 function Header() {
   return (
     <header id='header' className='header'>
-      {/* Logo Area */}
-      <div>
-      <Logo />
+       <div>
+        <Sidebar />
       </div>
-      {/* Search Bar Area */}
-      <SearchBar/>
-      {/* Nav Area */}
-      <Nav />
+
+      <div className="header-mobile-area">
+        <div>
+          <Logo />
+        </div>
+
+        <div>
+          <Nav />
+        </div>
+      </div>
+
+      <div className="header-tablet-area">
+        <div className='left'>
+          <Logo />
+        </div>
+        
+        <div className='right'>
+          <Nav />
+        </div>
+      </div>
+      
+     
     </header>
   )
 }

@@ -9,6 +9,9 @@
   cursor: pointer;
   z-index: 1000;
   font-size:24px;
+  position:absolute;
+  top: 80px;
+  left:20px;
 }
 
 .sidebar {
@@ -17,7 +20,7 @@
   background-color: #333;
   color: white;
   position: fixed;
-  top: 100px;
+  top: 104px;
   left: 0;
   transform: translateX(-100%);
   transition: transform 0.3s ease;
@@ -43,7 +46,7 @@
   background-color: #444;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .sidebar-container {
     display: flex;
     flex-direction: column;
@@ -57,7 +60,8 @@
     position: static;
     width: 250px;
     height: 100vh;
-    top: 0;
+    margin-top:60px;
+    top:0;
     left: 0;
     transform: translateX(0);
     border-radius: 0;
