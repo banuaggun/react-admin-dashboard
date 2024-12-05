@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import '../assets/styles/sidebar.css';
+import './sidebar.css';
 
 const Sidebar = () => { 
   

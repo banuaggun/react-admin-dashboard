@@ -1,6 +1,6 @@
 import React from 'react'
-import Dropdown from  '../functions/Dropdown'
-import data from '../data/data.json'
+import Dropdown from  '../../functions/Dropdown'
+import data from '../../data/data.json'
 
 function NavMessage() {
   return (

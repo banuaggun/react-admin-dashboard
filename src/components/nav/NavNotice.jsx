@@ -1,7 +1,6 @@
 import React from 'react'
-import Dropdown from '../functions/Dropdown'
-import data from '../data/data.json'
-import '../assets/styles/nav.css'
+import Dropdown from '../../functions/Dropdown'
+import data from '../../data/data.json'
 
 const NavNotice = () => {
   return (

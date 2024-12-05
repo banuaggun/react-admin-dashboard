@@ -46,7 +46,9 @@
   background-color: #444;
 }
 
-@media (min-width: 600px) {
+/* sidebar açılış kapanışını ekran boyutuna göre ayarla */
+
+@media (max-width: 100px) {
   .sidebar-container {
     display: flex;
     flex-direction: column;

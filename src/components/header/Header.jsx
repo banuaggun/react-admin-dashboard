@@ -1,8 +1,8 @@
 import React from 'react'
-import '../assets/styles/header.css'
-import Logo from './Logo'
-import Nav from './Nav'
-import Sidebar from './Sidebar'
+import './header.css'
+import Logo from '../logo/Logo'
+import Nav from '../nav/Nav'
+import Sidebar from '../sidebar/Sidebar'
 
 function Header() {
   return (
