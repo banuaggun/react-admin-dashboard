@@ -1,0 +1,13 @@
+#main{
+  margin-top: 60px;
+  padding:70px 30px 20px 80px;
+  transition: all 0.3s;
+  background-color: pink;
+}
+
+@media (max-width:1199px){
+  #main{
+    background-color: lime;
+    padding:20px;
+  }
+}

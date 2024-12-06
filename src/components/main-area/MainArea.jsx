@@ -1,9 +1,12 @@
 import React from 'react'
+import PageTitle from '../page-title/PageTitle'
 import './mainarea.css'
 
 const MainArea = () => {
   return (
-    <div>MainArea</div>
+    <main  id='main' className='main'>
+      <PageTitle/>
+    </main>
   )
 }
 

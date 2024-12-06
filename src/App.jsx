@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './components/header/Header'
 import './App.css'
+import MainArea from './components/main-area/MainArea'
 
 function App() {
 
@@ -8,7 +9,7 @@ function App() {
     <>
      
       <Header />
-      
+      <MainArea/>
     </>
   )
 }
