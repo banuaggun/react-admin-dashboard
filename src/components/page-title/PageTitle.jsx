@@ -1,9 +1,24 @@
 import React from 'react'
 import './pagetitle.css'
 
-const PageTitle = () => {
+const PageTitle = ({page}) => {
   return (
-    <div>PageTitle</div>
+    <div className='page-title'>
+      <h1>{page}</h1>
+        <ol className='breadcrumb'>
+          <li className="breadcrumb-item">
+            <a>
+              <i className='ph ph-door'></i>
+              </a>
+          </li>
+          <li>
+            <span>/</span>
+          </li>
+          <li className="breadcrumb-item active">
+            {page}
+          </li>
+        </ol>
+    </div>
   )
 }
 

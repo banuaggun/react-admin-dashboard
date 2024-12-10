@@ -5,7 +5,7 @@ import './mainarea.css'
 const MainArea = () => {
   return (
     <main  id='main' className='main'>
-      <PageTitle/>
+      <PageTitle page="dashboard"/>
     </main>
   )
 }
