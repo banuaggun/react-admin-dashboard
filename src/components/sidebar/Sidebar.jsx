@@ -28,7 +28,7 @@ const Sidebar = () => {
       </button> 
       <div className={`sidebar ${isOpen ? 'open' : 'closed'}`}> 
         <ul> 
-          <li>Home</li> 
+          <li>Dashboard</li> 
           <li>About</li> 
           <li>Services</li> 
           <li>Contact</li> 
