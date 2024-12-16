@@ -28,10 +28,22 @@ const Sidebar = () => {
       </button> 
       <div className={`sidebar ${isOpen ? 'open' : 'closed'}`}> 
         <ul> 
-          <li>Dashboard</li> 
-          <li>About</li> 
-          <li>Services</li> 
-          <li>Contact</li> 
+          <li>
+            <i className='ph ph-door'></i>
+            <span>Dashboard</span>  
+          </li> 
+          <li>
+            <i className='ph ph-door'></i>
+            <span>Dashboard</span>   
+          </li> 
+          <li>
+            <i className='ph ph-door'></i>
+            <span>Dashboard</span> 
+          </li> 
+          <li>
+              <i className='ph ph-door'></i>
+            <span>Dashboard</span>   
+          </li> 
         </ul> 
       </div> 
     </div> 

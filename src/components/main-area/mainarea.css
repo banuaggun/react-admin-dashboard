@@ -1,13 +1,18 @@
-#main{
+#main {
   margin-top: 60px;
-  padding:70px 30px 20px 80px;
+  position:absolute;
+  top:0;
+  width:100%;
+  height:auto;
+  padding: 20px 0px 20px 0px;
   transition: all 0.3s;
   background-color: pink;
+  margin-left: 60px; /* Sidebar genişliği kadar boşluk bırak */
 }
 
-@media (max-width:1199px){
-  #main{
+@media (max-width: 1199px) {
+  #main {
     background-color: lime;
-    padding:20px;
+    margin: 120px 0 0 20px;
   }
 }
