@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './sidebar.css';
+import data from '../../data/data.json'
 
 const Sidebar = () => { 
   
@@ -28,22 +29,13 @@ const Sidebar = () => {
       </button> 
       <div className={`sidebar ${isOpen ? 'open' : 'closed'}`}> 
         <ul> 
-          <li>
-            <i className='ph ph-door'></i>
-            <span>Dashboard</span>  
-          </li> 
-          <li>
-            <i className='ph ph-door'></i>
-            <span>Dashboard</span>   
-          </li> 
-          <li>
-            <i className='ph ph-door'></i>
-            <span>Dashboard</span> 
-          </li> 
-          <li>
-              <i className='ph ph-door'></i>
-            <span>Dashboard</span>   
-          </li> 
+          {data.sidebar.map(item => ( 
+            <li key={item.id}> 
+              <i className={item.icon}></i> 
+              <span>{item.text}</span> 
+            </li> 
+          ))}
+          
         </ul> 
       </div> 
     </div> 

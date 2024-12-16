@@ -25,6 +25,46 @@
     "time":"2 hr. ago"
   }
 ],
-"messages": [ { "id": 1, "sender": "Kullanıcı 1", "content": "Mesaj içeriği 1", "time": "12:00 PM" }, { "id": 2, "sender": "Kullanıcı 2", "content": "Mesaj içeriği 2", "time": "1:00 PM" } ],
- "userInfo": { "name": "Kullanıcı Adı", "email": "kullanici@example.com" }
+  "messages": [ 
+    { 
+      "id": 1, 
+      "sender": "Kullanıcı 1", 
+      "content": "Mesaj içeriği 1", 
+      "time": "12:00 PM" 
+    }, 
+    { 
+      "id": 2, 
+      "sender": "Kullanıcı 2", 
+      "content": "Mesaj içeriği 2", 
+      "time": "1:00 PM" 
+    } 
+  ],
+  
+  "userInfo": { 
+    "name": "Kullanıcı Adı", 
+    "email": "kullanici@example.com" 
+  },
+
+  "sidebar": [
+    {
+      "id":1,
+      "icon":"ph ph-door",
+      "text":"Dashboard"
+    },
+    {
+      "id":2,
+      "icon":"ph ph-door",
+      "text":"products"
+    },
+    {
+      "id":3,
+      "icon":"ph ph-door",
+      "text":"customers"
+    },
+    {
+      "id":4,
+      "icon":"ph ph-door",
+      "text":"settings"
+    }
+  ]
 }
