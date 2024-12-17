@@ -33,6 +33,15 @@
 .dropdown-menu li {
   padding: 10px 5px;
   cursor: pointer;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #cdcaca;
+}
+
+.dropdown-menu li div:last-child { 
+  margin-left: auto; /* Ekledik */ 
 }
 
 .dropdown-menu li:hover {

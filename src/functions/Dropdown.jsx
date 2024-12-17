@@ -32,10 +32,15 @@ const Dropdown = ({ icon, items }) => {
           <ul>
             {items.map((item, index) => (
               <li key={index}> 
+                <div>
                 <h4>{item.title || item.sender}</h4> 
                 <p>{item.text || item.content}</p> 
+                </div>
+                <div>
                 {item.time && <small>{item.time}</small>} 
+                </div>
               </li>
+            
             ))}
           </ul>
         </div>
