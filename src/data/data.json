@@ -28,21 +28,21 @@
   "messages": [ 
     { 
       "id": 1, 
-      "sender": "Kullanıcı 1", 
-      "content": "Mesaj içeriği 1", 
-      "time": "12:00 PM" 
+      "sender": "Aria Fitz", 
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit.", 
+      "time": "14:30 PM" 
     }, 
     { 
       "id": 2, 
-      "sender": "Kullanıcı 2", 
-      "content": "Mesaj içeriği 2", 
-      "time": "1:00 PM" 
+      "sender": "John Doe", 
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit.", 
+      "time": "12:00 PM" 
     } 
   ],
   
   "userInfo": { 
-    "name": "Kullanıcı Adı", 
-    "email": "kullanici@example.com" 
+    "name": "Jane Madelaine", 
+    "email": "janemadelaine@mail.com" 
   },
 
   "sidebar": [
