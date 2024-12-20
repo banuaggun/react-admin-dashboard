@@ -1,0 +1,37 @@
+/* info cards */
+
+.dashboard .info-card{
+  padding-bottom:10px;
+}
+
+.dashboard .info-card h6{
+  font-size:28px;
+  color:blue;
+  font-weight:700;
+  margin:0;
+  padding:0;
+}
+
+.dashboard .card-icon{
+  font-size:32px;
+  line-height: 0;
+  width:64px;
+  height:64px;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.dashboard .sales-card .card-icon{
+  color:mediumvioletred;
+  background-color: #f6f6fe;
+}
+
+.dashboard .revenue-card .card-icon{
+  color:mediumseagreen;
+  background-color: #f6f6fe;
+}
+
+.dashboard .customers-card .card-icon{
+  color:darkgoldenrod;
+  background-color: #f6f6fe;
+}
