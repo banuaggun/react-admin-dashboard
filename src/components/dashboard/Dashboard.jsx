@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import Card from '../card/Card'
+import Reports from '../reports/Reports'
 import './dashboard.css'
 
 const Dashboard = () => {
@@ -24,6 +25,9 @@ const Dashboard = () => {
             {
               cards && cards.length > 0 && cards.map(card => <Card key={card._id} card={card} />)
             }
+            <div className="col-12">
+              <Reports />
+            </div>
           </div>
         </div>
         <div className="col-lg-4"></div>
