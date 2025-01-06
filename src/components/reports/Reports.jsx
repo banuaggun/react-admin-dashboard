@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import CardFilter from '../card-filter/CardFilter'
+import ReportCharts from './ReportCharts';
 
 const Reports = () => {
   const [filter, setFilter] = useState('Today');
@@ -14,6 +15,7 @@ const Reports = () => {
         <h6 className="card-title">
           <span>Reports/{filter}</span>
         </h6>
+        <ReportCharts/>
       </div>
     </div>
   )
