@@ -45,6 +45,26 @@
     "email": "janemadelaine@mail.com" 
   },
 
+  "filters": [
+    {
+      "id": 1,
+      "name": "Today",
+      "value": "today"
+    },
+    {
+      "id": 2,
+      "name": "This Month",
+      "value": "this_month"
+    },
+    {
+      "id": 3,
+      "name": "This Year",
+      "value": "this_year"
+    }
+  ],
+
+  
+
   "sidebar": [
     {
       "id":1,
