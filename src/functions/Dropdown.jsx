@@ -7,6 +7,7 @@ const Dropdown = ({ icon, items }) => {
 
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
+    console.log('çalıştı');
   };
 
   const handleClickOutside = (event) => {
@@ -35,6 +36,7 @@ const Dropdown = ({ icon, items }) => {
                 <div>
                 <h4>{item.title || item.sender}</h4> 
                 <p>{item.text || item.content}</p> 
+                <a href="#">{item.name}</a>
                 </div>
                 <div>
                 {item.time && <small>{item.time}</small>} 
