@@ -1,6 +1,21 @@
 import React from 'react'
 
 const RecentSalesTable = ({items}) => {
+  const handleStatus = status => {
+    switch(status){
+      case 'Approved':
+      return 'success';
+      break;
+      case 'Pending':
+      return 'warning';
+      break;
+      case 'Rejected':
+      return 'danger';
+      break;
+      default:
+        return 'success';
+    }
+  };
   return (
     <table className='table table-borderless datatable'>
       <thead className='table-light'>
@@ -23,6 +38,11 @@ const RecentSalesTable = ({items}) => {
                 <a href="#" className='text-primary'>{item.product}</a>
              </td>
              <td>${item.price.toFixed(2)}</td>
+             <td>
+               <span className={`badge bg-${handleStatus(item.status)}`}>
+                 {item.status}
+               </span>
+             </td>
            </tr>
          ))}
       </tbody>

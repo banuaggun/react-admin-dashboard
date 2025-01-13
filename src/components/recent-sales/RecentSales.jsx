@@ -19,7 +19,7 @@ const RecentSales = () => {
     fetchData();
   }, []);
   return (
-    <div className='card recent-sales overflow-auto'>
+    <div className='card recent-sales'>
       <CardFilter filterChange={handleFilterChange}/>
 
       <div className="card-body">
