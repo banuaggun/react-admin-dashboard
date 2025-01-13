@@ -11,8 +11,8 @@ const RecentSales = () => {
   };
 
   const fetchData = () => {
-    fetch('../api/info.json').then(res => res.json()).then(data => {
-      setItems(data.cards);
+    fetch('../api/info.json').then(res => res.json()).then(item => {
+      setItems(item.recentsales);
     }).catch(e => console.log(e.message))
   };
   useEffect(() => {
