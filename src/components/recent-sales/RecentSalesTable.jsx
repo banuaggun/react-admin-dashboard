@@ -1,4 +1,5 @@
 import React from 'react'
+import './recentsales.css'
 
 const RecentSalesTable = ({items}) => {
   const handleStatus = status => {
@@ -39,8 +40,10 @@ const RecentSalesTable = ({items}) => {
              </td>
              <td>${item.price.toFixed(2)}</td>
              <td>
-               <span className={`badge bg-${handleStatus(item.status)}`}>
+               <span className='badge--bg'>
+               <span className={`badge-bg bg-${handleStatus(item.status)}`}>
                  {item.status}
+               </span>
                </span>
              </td>
            </tr>
