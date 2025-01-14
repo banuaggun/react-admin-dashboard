@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import TopSelling from '../../top-selling/TopSelling'
 import Card from '../card/Card'
 import RecentSales from '../recent-sales/RecentSales'
 import Reports from '../reports/Reports'
@@ -31,6 +32,9 @@ const Dashboard = () => {
             </div>
             <div className="col-12">
               <RecentSales/>
+            </div>
+            <div className="col-12">
+              <TopSelling/>
             </div>
           </div>
         </div>
