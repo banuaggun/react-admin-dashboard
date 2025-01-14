@@ -113,9 +113,17 @@
     {
       "_id":4,
       "number":"#2420",
+      "customer":"brandon jacob",
+      "product":"at presentatium minu",
+      "price":82,
+      "status":"Rejected"
+    },
+    {
+      "_id":5,
+      "number":"#2420",
       "customer":"alisa jacob",
       "product":"at presentatium minu",
-      "price":64,
+      "price":147,
       "status":"Pending"
     }
   ],

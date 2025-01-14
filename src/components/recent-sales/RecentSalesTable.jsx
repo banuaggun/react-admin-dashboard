@@ -18,7 +18,7 @@ const RecentSalesTable = ({items}) => {
     }
   };
   return (
-    <table className='table table-borderless datatable'>
+    <table className='table table-borderless datatable overflow-auto'>
       <thead className='table-light'>
         <tr>
           <th scope="col">#</th>
