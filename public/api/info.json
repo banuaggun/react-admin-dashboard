@@ -51,35 +51,35 @@
   "topselling":[
     {
       "_id":1,
-      "preview":"../assets/items/product-1.jpg",
+      "preview":"src/assets/items/gokyuzu.jpg",
       "name":"lorem ipsum colors",
       "price":59,
       "sold":70
     },
     {
       "_id":2,
-      "preview":"../assets/items/product-2.jpg",
+      "preview":"src/assets/items/gokyuzu.jpg",
       "name":"lorem ipsum colors",
       "price":40,
       "sold":80
     },
     {
       "_id":3,
-      "preview":"../assets/items/product-3.jpg",
+      "preview":"src/assets/items/gokyuzu.jpg",
       "name":"lorem ipsum colors",
       "price":59,
       "sold":70
     },
     {
       "_id":4,
-      "preview":"../assets/items/product-4.jpg",
+      "preview":"src/assets/items/product-2.jpg",
       "name":"lorem ipsum colors",
       "price":59,
       "sold":70
     },
     {
       "_id":5,
-      "preview":"../assets/items/product-5.jpg",
+      "preview":"src/assets/items/gokyuzu.jpg",
       "name":"lorem ipsum colors",
       "price":59,
       "sold":70
