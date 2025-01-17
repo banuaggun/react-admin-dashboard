@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import TopSelling from '../../top-selling/TopSelling'
 import Card from '../card/Card'
+import RecentActivity from '../recent-activity/RecentActivity'
 import RecentSales from '../recent-sales/RecentSales'
 import Reports from '../reports/Reports'
 import './dashboard.css'
@@ -38,7 +39,9 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
-        <div className="col-lg-4"></div>
+        <div className="col-lg-4">
+          <RecentActivity />
+        </div>
       </div>
     </section>
   )
