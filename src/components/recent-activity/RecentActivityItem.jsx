@@ -7,7 +7,7 @@ const RecentActivityItem = ({item}) => {
       <div className="active-label">
         {item.time}
       </div>
-      <i className={`ph ph-bell activity-badge ${item.color} align-self-start`}></i>
+      <i className={`ph-fill ph-circle activity-badge ${item.color} align-self-start`}></i>
       {item.highlight === '' ? (
         <div className='activity-content'>{item.content}</div>
       ) : (

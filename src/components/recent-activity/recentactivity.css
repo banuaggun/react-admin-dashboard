@@ -40,3 +40,6 @@
   top:5px;
 }
 
+.dashboard .activity .activity-item::last-child .activity-content{
+  padding-bottom: 0;
+}

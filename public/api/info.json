@@ -138,35 +138,35 @@
     {
       "_id":2,
       "time":"20 min",
-      "color":"text-success",
+      "color":"text-primary",
       "content":"lorem ipsum ...",
       "highlight":""
     },
     {
       "_id":3,
       "time":"32 min",
-      "color":"text-success",
+      "color":"text-danger",
       "content":"lorem ipsum ...",
       "highlight":"occupation lights"
     },
     {
       "_id":4,
       "time":"20 min",
-      "color":"text-success",
+      "color":"text-info",
       "content":"lorem ipsum ...",
       "highlight":""
     },
     {
       "_id":5,
       "time":"32 min",
-      "color":"text-success",
+      "color":"text-warning",
       "content":"lorem ipsum ...",
       "highlight":"occupation lights"
     },
     {
       "_id":6,
       "time":"20 min",
-      "color":"text-success",
+      "color":"text-muted",
       "content":"lorem ipsum ...",
       "highlight":""
     }
