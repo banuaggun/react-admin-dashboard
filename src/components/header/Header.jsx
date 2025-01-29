@@ -7,10 +7,7 @@ import Sidebar from '../sidebar/Sidebar'
 function Header() {
   return (
     <header id='header' className='header'>
-       <div>
-        <Sidebar />
-      </div>
-
+       
       <div className="header-mobile-area">
         <div>
           <Logo />
@@ -25,6 +22,7 @@ function Header() {
         <div className='left'>
           <Logo />
         </div>
+       
         
         <div className='right'>
           <Nav />
