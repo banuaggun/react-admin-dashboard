@@ -1,0 +1,50 @@
+.sidebar-container{
+  position:relative;
+}
+
+.toggle-button{
+  position: relative;
+  z-index:999;
+  margin-top:60px;
+  left:40px;
+  border:none;
+  background-color: transparent;
+  font-size:2rem;
+}
+
+.sidebar{
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  background-color:beige;
+
+  margin-top:0px;
+  
+}
+
+.sidebar.open {
+  transform: translateX(0);
+  width:250px;
+  height:100vh;
+}
+
+.sidebar.closed{
+  transform: translateX(-50%);
+  width:60px;
+  height:100vh;
+}
+
+.sidebar ul li{
+  list-style: none;
+  font-size: 2rem;
+}
+
+
+.sidebar.closed ~ .sidebar ul li i{
+  font-size: 2rem;
+}
+
+.sidebar.closed ~ .sidebar ul li span{
+  display: none;
+}
+
+
