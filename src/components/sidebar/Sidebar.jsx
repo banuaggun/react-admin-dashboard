@@ -1,5 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './sidebar2.css';
+import './close.css';
+import './open.css';
+import './tooltip.css';
 import data from '../../data/data.json'
 
 const Sidebar = () => { 
@@ -31,8 +34,14 @@ const Sidebar = () => {
         <ul> 
           {data.sidebar.map(item => ( 
             <li key={item.id}> 
-              <i className={item.icon}></i> 
+            <a href={item.id}>
+                <i className={item.icon}></i> 
+                <div className="tooltip">
+                <span className="tooltiptext">{item.text}</span>
+                </div>
+                
               <span>{item.text}</span> 
+              </a>
             </li> 
           ))}
           
