@@ -15,51 +15,23 @@
 .sidebar{
   transform: translateX(-100%);
   transition: transform 0.3s ease;
-  background-color:beige;  
+  background-color:floralwhite;
 }
 
-.sidebar ul li{
-  border:1px solid green;
-}
-
-.sidebar.open {
-  transform: translateX(0);
-  transition: transform 0.3s ease;
-  width:250px;
-  height:100vh;
-}
-
-.sidebar.closed{
-  transform: translateX(0%);
-  transition: transform 0.3s ease;
-  width:auto;
-  height:100vh;
-}
 
 .sidebar ul li{
   list-style: none;
-  font-size: 2rem;
-}
-
-.sidebar.closed > ul{
-  padding:0;
-}
-.sidebar.closed > ul li{
   display: flex;
+  justify-content: flex-start;
   align-items:center;
-  justify-content: center;
-  padding:8px;
-  margin-bottom:16px;
 }
 
-.sidebar.closed > ul li i{
-  color:yellowgreen;
-  font-size: 2rem;
+.sidebar > ul li i{
+  font-size: 1.5rem;
 }
 
-.sidebar.closed > ul li span{
-  color:red;
-  display:none;
+.sidebar > ul li span{
+  font-size: 16px;
+  text-transform: capitalize;
+  margin-left: 8px;
 }
-
-
