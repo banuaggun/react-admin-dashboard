@@ -1,54 +1,37 @@
-import React, { useState, useEffect, useRef } from 'react';
-import './sidebar2.css';
-import './close.css';
-import './open.css';
-import './tooltip.css';
+import { useState } from 'react'
+import './sidebar.css'
 import data from '../../data/data.json'
 
-const Sidebar = () => { 
+const Sidebar = () => {
   
-  const [isOpen, setIsOpen] = useState(false); 
-  const sidebarRef = useRef(null); 
-  
-  const toggleSidebar = () => { setIsOpen(!isOpen); };
-  
-  const handleClickOutside = (event) => { 
-    if (sidebarRef.current && !sidebarRef.current.contains(event.target)) { 
-      setIsOpen(false); 
-    } 
-  }; 
-  
-  useEffect(() => { 
-    document.addEventListener('mousedown', handleClickOutside); 
-    return () => { 
-      document.removeEventListener('mousedown', handleClickOutside); 
-    }; 
-  }, []); 
-  
-  return ( 
-    <div className="sidebar-container"> 
-      <button className="toggle-button" onClick={toggleSidebar} ref={sidebarRef}> 
-        <i className='ph ph-funnel-simple'></i> 
-      </button> 
-      <div className={`sidebar ${isOpen ? 'open' : 'closed'}`}> 
-        <ul> 
-          {data.sidebar.map(item => ( 
-            <li key={item.id}> 
-            <a href={item.id}>
-                <i className={item.icon}></i> 
-                <div className="tooltip">
-                <span className="tooltiptext">{item.text}</span>
-                </div>
-                
-              <span>{item.text}</span> 
-              </a>
-            </li> 
-          ))}
+  const [isExpanded, setIsExpanded] = useState(false)
+
+  return (
+    <>
+    <div className={isExpanded ? "side-nav-container" : "side-nav-container side-nav-container-nx"}>
+      <div className="nav-upper">
+        <div className="nav-heading">
           
-        </ul> 
-      </div> 
-    </div> 
-  ); 
-};
+          <button className={isExpanded ? "hamburger hamburger-in" : "hamburger hamburger-out"} onClick={() => setIsExpanded(!isExpanded)}>
+            <i className={isExpanded ? 'ph ph-funnel-simple' : 'ph ph-door'}></i>
+          </button>
+        </div>
+      </div>
+      <div className="nav-menu">
+        {data.sidebar.map(({id, icon, text}) => (
+          <a href={id} className={isExpanded ? "menu-item" : "menu-item menu-item-nx"}>
+            <i className={icon}></i>
+            {isExpanded && <span>{text}</span>}
+            {!isExpanded && <p>{text}</p>}
+          </a>
+        ))}
+      </div>
+    </div>
+    <div className="nav-footer">
+      
+    </div>
+    </>
+  )
+}
 
 export default Sidebar
