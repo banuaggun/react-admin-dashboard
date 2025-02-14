@@ -1,8 +1,11 @@
 import React from 'react'
+import './dashboard.css'
 
 const Blank = () => {
   return (
-    <div>Blank</div>
+    <section aria-label='dashboard' className='dashboard-section'>
+      <div className="row"></div>
+    </section>
   )
 }
 

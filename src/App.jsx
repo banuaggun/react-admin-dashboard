@@ -4,7 +4,7 @@ import './App.css'
 import MainArea from './components/main-area/MainArea'
 import Sidebar from './components/sidebar/Sidebar'
 
-function App() {
+function App({isExpanded}) {
 
   return (
     <>
@@ -15,7 +15,7 @@ function App() {
       <div className="content-sidebar">
           <Sidebar/>
         </div>
-        <div className="content-main">
+        <div className={isExpanded ? "content-main" : "content-main-out"}>
           <MainArea/>
         </div>
      </div>
