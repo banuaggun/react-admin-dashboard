@@ -1,36 +1,50 @@
-.dashboard .filter{
-  position: absolute;
-  right:20px;
-  top:15px;
+/* dashboard3.css */
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
 }
 
-.dashboard .filter-icon{
-  color:red;
+.dashboard-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dashboard-row-left,
+.dashboard-row-right {
+  transition: width 0.3s ease; /* Geçiş animasyonu ekleyin */
+}
+
+.dashboard.sidebar-open .dashboard-row-left {
+  width: 60%; /* Sidebar açıkken sol bölümün genişliği */
+}
+
+.dashboard.sidebar-open .dashboard-row-right {
+  width: 40%; /* Sidebar açıkken sağ bölümün genişliği */
+}
+
+.dashboard.sidebar-close .dashboard-row-left,
+.dashboard.sidebar-close .dashboard-row-right {
+  width: 50%; /* Sidebar kapalıyken genişlik */
+}
+
+.dashboard-row-left-card {
   padding-right:20px;
-  padding-bottom:5px;
-  transition: 0.3s;
-  font-size:16px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 8px; /* Kartlar arasındaki mesafe */
 }
 
-.dashboard .filter-icon:hover,
-.dashboard .filter-icon.focus{
-  color:darkviolet;
+.dashboard-row-left-card > * {
+  flex: 1 1 calc(33.333% - 10px); /* Kartların genişliği (örneğin 3 sütun) */
+  margin: 5px; /* Kartların arasındaki boşluk */
 }
 
-.dashboard .filter .dropdown-header{
-  padding:8px 15px;
+.dashboard-row-left-card {
+  margin-left: -5px;
+  margin-right: -5px;
 }
 
-.dashboard .filter .dropdown-header h6{
-  text-transform: uppercase;
-  font-size:14px;
-  font-weight:600;
-  letter-spacing: 1px;
-  color:gray;
-  margin-bottom: 0;
-  padding:0;
-}
-
-.dashboard .filter .dropdown-item{
-  padding:8px 15px;
+.dashboard-row-left-card > * {
+  margin: 5px;
 }
