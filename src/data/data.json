@@ -68,22 +68,22 @@
   "sidebar": [
     {
       "id":1,
-      "icon":"ph ph-door",
+      "icon":"ph-fill ph-diamonds-four",
       "text":"Dashboard"
     },
     {
       "id":2,
-      "icon":"ph ph-door",
+      "icon":"ph-fill ph-shapes",
       "text":"products"
     },
     {
       "id":3,
-      "icon":"ph ph-door",
+      "icon":"ph-fill ph-users-three",
       "text":"customers"
     },
     {
       "id":4,
-      "icon":"ph ph-door",
+      "icon":"ph-fill ph-gear-six",
       "text":"settings"
     }
   ]
