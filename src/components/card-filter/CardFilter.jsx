@@ -10,7 +10,7 @@ const CardFilter = () => {
       <Dropdown
                 icon={
                     <div className="icon-container">
-                        <i className="ph ph-bell"></i>
+                        <i className="ph-fill ph-circles-three-plus"></i>
                     </div>
                 }
                 items={data.filters.map((filter) => ({

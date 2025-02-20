@@ -1,37 +1,88 @@
-/* info cards */
-
-.dashboard .info-card{
-  padding-bottom:10px;
+.cards{
+  flex:1;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  width:100%;
+  padding:8px;
 }
 
-.dashboard .info-card h6{
-  font-size:28px;
-  color:blue;
-  font-weight:700;
-  margin:0;
-  padding:0;
+.cards-content{
+  background-color:white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width:100%;
+  padding:8px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.dashboard .card-icon{
-  font-size:32px;
-  line-height: 0;
-  width:64px;
-  height:64px;
-  flex-shrink: 0;
-  flex-grow: 0;
+.cards-content-filter{
+  display: flex;
+  justify-content: flex-end;
 }
 
-.dashboard .sales-card .card-icon{
-  color:mediumvioletred;
-  background-color: #f6f6fe;
+.cards-content-body{
+  width:100%;
+  padding:8px;
 }
 
-.dashboard .revenue-card .card-icon{
-  color:mediumseagreen;
-  background-color: #f6f6fe;
+.cards-title{
+  display: flex;
+  font-size:1rem;
+  font-weight:bold;
+  padding-bottom: 8px;
 }
 
-.dashboard .customers-card .card-icon{
-  color:darkgoldenrod;
-  background-color: #f6f6fe;
+.cards-details{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details-icon{
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-color:powderblue;
+  font-size: 1.5rem;
+  color:darkslategrey;
+  margin-right:20px;
+}
+
+.details-right h6{
+  color:royalblue;
+  font-weight: 600;
+}
+
+.details-percent{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details-number{
+  font-weight:bold;
+  font-size:1rem;
+}
+
+.success{
+  color: forestgreen;
+}
+
+.danger{
+  color:crimson;
+}
+
+.details-arrow{
+  font-size:2rem;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
