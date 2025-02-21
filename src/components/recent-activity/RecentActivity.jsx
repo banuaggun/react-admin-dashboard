@@ -1,41 +1,48 @@
-import { useState, useEffect } from 'react'
-import CardFilter from '../card-filter/CardFilter'
-import './recentactivity.css'
-import RecentActivityItem from './RecentActivityItem'
+import { useState, useEffect } from "react";
+import CardFilter from "../card-filter/CardFilter";
+import "./recentactivity.css";
+import RecentItem from "./RecentItem";
 
 const RecentActivity = () => {
-  const [items, setItems] = useState([])
-  const [filter, setFilter] = useState('Today')
-  const handleFilterChange = filter => {
+  const [items, setItems] = useState([]);
+  const [filter, setFilter] = useState("Today");
+  const handleFilterChange = (filter) => {
     setFilter(filter);
   };
 
   const fetchData = () => {
-    fetch('../api/info.json').then(res => res.json()).then(item => {
-      setItems(item.recentactivity);
-    }).catch(e => console.log(e.message))
+    fetch("../api/info.json")
+      .then((res) => res.json())
+      .then((item) => {
+        setItems(item.recentactivity);
+      })
+      .catch((e) => console.log(e.message));
   };
   useEffect(() => {
     fetchData();
   }, []);
 
   return (
-    <div className="card">
-      <CardFilter filterChange={handleFilterChange} />
+    <div className="recent">
+      <div className="recent-activity-body">
+        <div className="recent-activity-header">
+          <div className="recent-title">
+            <span>Recent Activity | {filter} </span>
+          </div>
 
-      <div className="card-body">
-        <h5 className="card-title">
-          <span>Recent Activity | {filter} </span>
-        </h5>
+          <div className="recent-filter">
+            <CardFilter filterChange={handleFilterChange} />
+          </div>
+        </div>
 
-        <div className="activity">
-          {items && items.length > 0 && items.map(item => (
-            <RecentActivityItem key={item._id} item={item} />
-          ))}
+        <div className="recent-item">
+          {items &&
+            items.length > 0 &&
+            items.map((item) => <RecentItem key={item._id} item={item} />)}
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default RecentActivity
+export default RecentActivity;
