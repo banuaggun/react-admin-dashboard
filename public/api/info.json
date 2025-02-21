@@ -128,47 +128,47 @@
     }
   ],
   "recentactivity":[
-    {
-      "_id":1,
-      "time":"32 min",
-      "color":"text-success",
-      "content":"lorem ipsum ...",
-      "highlight":"occupation lights"
-    },
-    {
-      "_id":2,
-      "time":"20 min",
-      "color":"text-primary",
-      "content":"lorem ipsum ...",
-      "highlight":""
-    },
-    {
-      "_id":3,
-      "time":"32 min",
-      "color":"text-danger",
-      "content":"lorem ipsum ...",
-      "highlight":"occupation lights"
-    },
-    {
-      "_id":4,
-      "time":"20 min",
-      "color":"text-info",
-      "content":"lorem ipsum ...",
-      "highlight":""
-    },
-    {
-      "_id":5,
-      "time":"32 min",
-      "color":"text-warning",
-      "content":"lorem ipsum ...",
-      "highlight":"occupation lights"
-    },
-    {
-      "_id":6,
-      "time":"20 min",
-      "color":"text-muted",
-      "content":"lorem ipsum ...",
-      "highlight":""
-    }
+  {
+    "_id": 1,
+    "time": "34 min",
+    "color": "text-success",
+    "content": "Revenue increased by 15% this quarter.",
+    "highlight": "15% increase"
+  },
+  {
+    "_id": 2,
+    "time": "25 min",
+    "color": "text-primary",
+    "content": "New customer acquisition hit an all-time high.",
+    "highlight": ""
+  },
+  {
+    "_id": 3,
+    "time": "40 min",
+    "color": "text-danger",
+    "content": "Product returns have decreased by 5%.",
+    "highlight": "5% decrease"
+  },
+  {
+    "_id": 4,
+    "time": "30 min",
+    "color": "text-info",
+    "content": "Sales team closed 50 new deals this week.",
+    "highlight": ""
+  },
+  {
+    "_id": 5,
+    "time": "11 min",
+    "color": "text-warning",
+    "content": "Customer satisfaction rating improved by 10%.",
+    "highlight": "10% improvement"
+  },
+  {
+    "_id": 6,
+    "time": "20 min",
+    "color": "text-muted",
+    "content": "Product inventory is at optimal levels.",
+    "highlight": ""
+  }
   ]
 }
