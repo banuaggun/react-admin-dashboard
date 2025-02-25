@@ -1,19 +1,30 @@
 .recent{
+  flex:1;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: flex-start;
   width:100%;
-  background-color: white;
-  border:1px solid papayawhip;
+  padding:16px 24px 0px 8px;
 }
 
 
 .recent-activity-body{
+  background-color:white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width:100%;
-  padding: 8px;
+  padding:8px 0 8px 8px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .recent-activity-header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding:16px;
 }
 
 .recent-title{

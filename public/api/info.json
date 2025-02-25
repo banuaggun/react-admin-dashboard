@@ -169,6 +169,13 @@
     "color": "text-muted",
     "content": "Product inventory is at optimal levels.",
     "highlight": ""
+  },
+  {
+    "_id": 7,
+    "time": "15 min",
+    "color": "text-success",
+    "content": "Employee productivity rose by 8% this month.",
+    "highlight": "8% increase"
   }
   ]
 }
