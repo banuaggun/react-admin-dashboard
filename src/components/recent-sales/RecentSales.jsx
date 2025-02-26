@@ -19,15 +19,21 @@ const RecentSales = () => {
     fetchData();
   }, []);
   return (
-    <div className='card recent-sales'>
-      <CardFilter filterChange={handleFilterChange}/>
-
-      <div className="card-body">
-        <h5 className="card-title">
-         <span>Recent Sales | {filter}</span>
-        </h5>
-        <RecentSalesTable items={items} />
+    <div className='sales'>
+      <div className="sales-content">
+        <div className="sales-content-filter">
+          <CardFilter filterChange={handleFilterChange}/>
+        </div>
+        <div className="sales-content-body">
+          <div className="sales-title">
+            <span>Recent Sales | {filter}</span>
+          </div>
+          <div className="sales-table">
+          <RecentSalesTable items={items} />
+          </div>
+        </div>
       </div>
+      
     </div>
   )
 }

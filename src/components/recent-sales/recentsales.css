@@ -1,4 +1,39 @@
+.sales{
+  flex:1;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  padding:8px;
+}
 
+.sales-content{
+  background-color:white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width:100%;
+  padding:8px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sales-content-filter{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sales-content-body{
+  width:100%;
+  padding:8px;
+}
+
+.sales-title{
+  display: flex;
+  font-size:1rem;
+  font-weight:bold;
+  padding-bottom:8px;
+}
 
 .badge-bg{
   border-radius:12px;
