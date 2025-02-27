@@ -19,26 +19,19 @@ const TopSelling = () => {
     fetchData();
   }, []);
   return (
-    <div className='card top-selling overflow-auto'>
-      <CardFilter filterChange={handleFilterChange}/>
-      <div className="card-body pb-8">
-        <h5 className="card-title">
-          <span>Top Selling | {filter}</span>
-        </h5>
-        <table className='table table-borderless'>
-          <thead className='table-light'>
-            <tr>
-              <th scope='col'>Preview</th>
-              <th scope='col'>Product</th>
-              <th scope='col'>Price</th>
-              <th scope='col'>Sold</th>
-              <th scope='col'>Revenue</th>
-            </tr>
-          </thead>
-          <tbody>
-            {items && items.length > 0 && items.map(item => <TopSellingItem key={item._id} item={item} />)}
-          </tbody>
-        </table>
+    <div className='top-selling'>
+      <div className="top-selling-content">
+        <div className="top-selling-content-filter">
+          <CardFilter filterChange={handleFilterChange}/>
+        </div>
+        <div className="top-selling-content-body">
+          <div className="top-selling-title">
+            <span>Top Selling | {filter}</span>
+          </div>
+          <div className="top-selling-table">
+            <TopSellingItem items={items} />
+          </div>
+        </div>
       </div>
     </div>
   )

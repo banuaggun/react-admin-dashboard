@@ -43,7 +43,7 @@ const Blank = ({ isExpanded }) => {
         <div className="dashboard-row-left">
           <RecentSales/>
         </div>
-        <div className="dashboard row-right">
+        <div className="dashboard-row-right">
           <TopSelling/>
         </div>
       </div>

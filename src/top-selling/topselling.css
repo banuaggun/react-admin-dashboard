@@ -1,24 +1,36 @@
-.dashboard .top-selling{
-  font-size:14px;
+.top-selling{
+  flex:1;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  padding:8px;
 }
 
-.dashboard .top-selling table thead{
-  background-color: #f6f6fe !important;
+.top-selling-content{
+  background-color:white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width:100%;
+  padding:8px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
 }
 
-.dashboard .top-selling table thead th{
-  border:0;
+.top-selling-content-filter{
+  display: flex;
+  justify-content: flex-end;
 }
 
-.dashboard .top-selling table tbody td{
-  vertical-align: middle;
+.top-selling-content-body{
+  width:100%;
+  padding:8px;
 }
 
-.top-selling-img{
-  border-radius: 5px;
-  height:60px;
-  max-width:60px;
-  width:60px;
-  object-fit: cover;
-  overflow: hidden;
+.top-selling-title{
+  display: flex;
+  font-size:1rem;
+  font-weight:bold;
+  padding-bottom:8px;
 }
