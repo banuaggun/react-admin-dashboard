@@ -1,181 +1,266 @@
 {
-  "cards":[
+  "cards": [
     {
-      "_id":1,
-      "name":"Sales",
-      "amount":145,
-      "icon":"ph ph-card",
-      "percantage":0.12,
-      "active":true
+      "_id": 1,
+      "name": "Sales",
+      "amount": 145,
+      "icon": "ph ph-card",
+      "percantage": 0.12,
+      "active": true
     },
     {
-      "_id":2,
-      "name":"Revenue",
-      "amount":3246,
-      "icon":"ph ph-dollar",
-      "percantage":0.08,
-      "active":false
+      "_id": 2,
+      "name": "Revenue",
+      "amount": 3246,
+      "icon": "ph ph-dollar",
+      "percantage": 0.08,
+      "active": false
     },
     {
-      "_id":3,
-      "name":"Customers",
-      "amount":1244,
-      "icon":"ph ph-people",
-      "percantage":-0.11,
-      "active":false
+      "_id": 3,
+      "name": "Customers",
+      "amount": 1244,
+      "icon": "ph ph-people",
+      "percantage": -0.11,
+      "active": false
     }
   ],
-  "news":[
+  "news": [
     {
-      "_id":1,
-      "img":"../assets/items/news-1.jpg",
-      "title":"Lorem ipsum",
-      "subtitle":"Lorem ipsum dolor sit amet...",
-      "category":"abc"
+      "_id": 1,
+      "img": "../assets/items/news-1.jpg",
+      "title": "Lorem ipsum",
+      "subtitle": "Lorem ipsum dolor sit amet...",
+      "category": "abc"
     },
     {
-      "_id":2,
-      "img":"../assets/items/news-2.jpg",
-      "title":"Lorem ipsum",
-      "subtitle":"Lorem ipsum dolor sit amet...",
-      "category":"abc"
+      "_id": 2,
+      "img": "../assets/items/news-2.jpg",
+      "title": "Lorem ipsum",
+      "subtitle": "Lorem ipsum dolor sit amet...",
+      "category": "abc"
     },
     {
-      "_id":3,
-      "img":"../assets/items/news-3.jpg",
-      "title":"Lorem ipsum",
-      "subtitle":"Lorem ipsum dolor sit amet...",
-      "category":"abc"
+      "_id": 3,
+      "img": "../assets/items/news-3.jpg",
+      "title": "Lorem ipsum",
+      "subtitle": "Lorem ipsum dolor sit amet...",
+      "category": "abc"
     }
   ],
-  "topselling":[
+  "topselling": [
     {
-      "_id":1,
-      "preview":"src/assets/items/gokyuzu.jpg",
-      "name":"lorem ipsum colors",
-      "price":59,
-      "sold":70
+      "_id": 1,
+      "preview": "src/assets/items/gokyuzu.jpg",
+      "name": "lorem ipsum colors",
+      "price": 59,
+      "sold": 70
     },
     {
-      "_id":2,
-      "preview":"src/assets/items/gokyuzu.jpg",
-      "name":"lorem ipsum colors",
-      "price":40,
-      "sold":80
+      "_id": 2,
+      "preview": "src/assets/items/gokyuzu.jpg",
+      "name": "lorem ipsum colors",
+      "price": 40,
+      "sold": 80
     },
     {
-      "_id":3,
-      "preview":"src/assets/items/gokyuzu.jpg",
-      "name":"lorem ipsum colors",
-      "price":59,
-      "sold":70
+      "_id": 3,
+      "preview": "src/assets/items/gokyuzu.jpg",
+      "name": "lorem ipsum colors",
+      "price": 59,
+      "sold": 70
     },
     {
-      "_id":4,
-      "preview":"src/assets/items/product-2.jpg",
-      "name":"lorem ipsum colors",
-      "price":59,
-      "sold":70
+      "_id": 4,
+      "preview": "src/assets/items/product-2.jpg",
+      "name": "lorem ipsum colors",
+      "price": 59,
+      "sold": 70
     },
     {
-      "_id":5,
-      "preview":"src/assets/items/gokyuzu.jpg",
-      "name":"lorem ipsum colors",
-      "price":59,
-      "sold":70
+      "_id": 5,
+      "preview": "src/assets/items/gokyuzu.jpg",
+      "name": "lorem ipsum colors",
+      "price": 59,
+      "sold": 70
     }
   ],
-  "recentsales":[
+  "recentsales": [
     {
-      "_id":1,
-      "number":"#2457",
-      "customer":"brandon jacob",
-      "product":"at presentatium minu",
-      "price":64,
-      "status":"Approved"
+      "_id": 1,
+      "number": "#2457",
+      "customer": "brandon jacob",
+      "product": "at presentatium minu",
+      "price": 64,
+      "status": "Approved"
     },
     {
-      "_id":2,
-      "number":"#2420",
-      "customer":"alisa jacob",
-      "product":"at presentatium minu",
-      "price":64,
-      "status":"Pending"
+      "_id": 2,
+      "number": "#2420",
+      "customer": "alisa jacob",
+      "product": "at presentatium minu",
+      "price": 64,
+      "status": "Pending"
     },
     {
-      "_id":3,
-      "number":"#2457",
-      "customer":"brandon jacob",
-      "product":"at presentatium minu",
-      "price":64,
-      "status":"Approved"
+      "_id": 3,
+      "number": "#2457",
+      "customer": "brandon jacob",
+      "product": "at presentatium minu",
+      "price": 64,
+      "status": "Approved"
     },
     {
-      "_id":4,
-      "number":"#2420",
-      "customer":"brandon jacob",
-      "product":"at presentatium minu",
-      "price":82,
-      "status":"Rejected"
+      "_id": 4,
+      "number": "#2420",
+      "customer": "brandon jacob",
+      "product": "at presentatium minu",
+      "price": 82,
+      "status": "Rejected"
     },
     {
-      "_id":5,
-      "number":"#2420",
-      "customer":"alisa jacob",
-      "product":"at presentatium minu",
-      "price":147,
-      "status":"Pending"
+      "_id": 5,
+      "number": "#2420",
+      "customer": "alisa jacob",
+      "product": "at presentatium minu",
+      "price": 147,
+      "status": "Pending"
     }
   ],
-  "recentactivity":[
-  {
-    "_id": 1,
-    "time": "34 min",
-    "color": "text-success",
-    "content": "Revenue increased by 15% this quarter.",
-    "highlight": "15% increase"
+  "recentactivity": [
+    {
+      "_id": 1,
+      "time": "34 min",
+      "color": "text-success",
+      "content": "Revenue increased by 15% this quarter.",
+      "highlight": "15% increase"
+    },
+    {
+      "_id": 2,
+      "time": "25 min",
+      "color": "text-primary",
+      "content": "New customer acquisition hit an all-time high.",
+      "highlight": ""
+    },
+    {
+      "_id": 3,
+      "time": "40 min",
+      "color": "text-danger",
+      "content": "Product returns have decreased by 5%.",
+      "highlight": "5% decrease"
+    },
+    {
+      "_id": 4,
+      "time": "30 min",
+      "color": "text-info",
+      "content": "Sales team closed 50 new deals this week.",
+      "highlight": ""
+    },
+    {
+      "_id": 5,
+      "time": "11 min",
+      "color": "text-warning",
+      "content": "Customer satisfaction rating improved by 10%.",
+      "highlight": "10% improvement"
+    },
+    {
+      "_id": 6,
+      "time": "20 min",
+      "color": "text-muted",
+      "content": "Product inventory is at optimal levels.",
+      "highlight": ""
+    },
+    {
+      "_id": 7,
+      "time": "15 min",
+      "color": "text-success",
+      "content": "Employee productivity rose by 8% this month.",
+      "highlight": "8% increase"
+    }
+  ],
+  "sidebar": [
+    {
+      "id": 1,
+      "icon": "ph-fill ph-diamonds-four",
+      "text": "Dashboard"
+    },
+    {
+      "id": 2,
+      "icon": "ph-fill ph-shapes",
+      "text": "products"
+    },
+    {
+      "id": 3,
+      "icon": "ph-fill ph-users-three",
+      "text": "customers"
+    },
+    {
+      "id": 4,
+      "icon": "ph-fill ph-gear-six",
+      "text": "settings"
+    }
+  ],
+  "notices": [
+    {
+      "id": 1,
+      "title": "Lorem İpsum",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "time": "30 min. ago"
+    },
+    {
+      "id": 2,
+      "title": "Lorem İpsum",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "time": "50 min. ago"
+    },
+    {
+      "id": 3,
+      "title": "Lorem İpsum",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "time": "1 hr. ago"
+    },
+    {
+      "id": 4,
+      "title": "Lorem İpsum",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "time": "2 hr. ago"
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "sender": "Aria Fitz",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "time": "14:30 PM"
+    },
+    {
+      "id": 2,
+      "sender": "John Doe",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "time": "12:00 PM"
+    }
+  ],
+
+  "userInfo": {
+    "name": "Jane Madelaine",
+    "email": "janemadelaine@mail.com"
   },
-  {
-    "_id": 2,
-    "time": "25 min",
-    "color": "text-primary",
-    "content": "New customer acquisition hit an all-time high.",
-    "highlight": ""
-  },
-  {
-    "_id": 3,
-    "time": "40 min",
-    "color": "text-danger",
-    "content": "Product returns have decreased by 5%.",
-    "highlight": "5% decrease"
-  },
-  {
-    "_id": 4,
-    "time": "30 min",
-    "color": "text-info",
-    "content": "Sales team closed 50 new deals this week.",
-    "highlight": ""
-  },
-  {
-    "_id": 5,
-    "time": "11 min",
-    "color": "text-warning",
-    "content": "Customer satisfaction rating improved by 10%.",
-    "highlight": "10% improvement"
-  },
-  {
-    "_id": 6,
-    "time": "20 min",
-    "color": "text-muted",
-    "content": "Product inventory is at optimal levels.",
-    "highlight": ""
-  },
-  {
-    "_id": 7,
-    "time": "15 min",
-    "color": "text-success",
-    "content": "Employee productivity rose by 8% this month.",
-    "highlight": "8% increase"
-  }
+
+  "filters": [
+    {
+      "id": 1,
+      "name": "Today",
+      "value": "today"
+    },
+    {
+      "id": 2,
+      "name": "This Month",
+      "value": "this_month"
+    },
+    {
+      "id": 3,
+      "name": "This Year",
+      "value": "this_year"
+    }
   ]
 }
