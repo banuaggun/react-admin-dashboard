@@ -5,6 +5,7 @@ import RecentActivity from '../recent-activity/RecentActivity';
 import Reports from '../reports/Reports';
 import RecentSales from '../recent-sales/RecentSales';
 import TopSelling from '../../top-selling/TopSelling';
+import PageTitle from '../page-title/PageTitle';
 
 const Blank = ({ isExpanded }) => {
   const [cards, setCards] = useState([]);
@@ -27,6 +28,7 @@ const Blank = ({ isExpanded }) => {
   return (
     <section aria-label="dashboard" className={`dashboard ${isExpanded ? 'sidebar-close' : 'sidebar-open'}`}>
       <div className="dashboard-row">
+        <PageTitle page="dashboard"/>
         <div className="dashboard-row-left">
           <div className="dashboard-row-left-card">
             {cards && cards.length > 0 && cards.map((card) => <Card key={card._id} card={card} />)}
