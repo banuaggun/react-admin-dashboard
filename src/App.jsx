@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import Header from './components/header/Header';
 import './App.css';
 import MainArea from './components/main-area/MainArea';
 import Sidebar from './components/sidebar/Sidebar';
+import Nav from './components/nav/Nav';
 
 function App() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <div className="content-header">
-        <Header />
+        <Nav/>
       </div>
       <div className="area">
         <div className="content-sidebar">

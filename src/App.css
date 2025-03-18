@@ -17,12 +17,13 @@
 *{
   margin:0;
   padding:0;
+  box-sizing: border-box;
 }
 
 body{
   font-family:'Lato', serif;
   color:#444444;
-  background-color: var(--second);
+  background-color: #fff;
   overflow-x:hidden;
 }
 
@@ -41,7 +42,6 @@ h1, h2, h3, h4, h5, h6{
 
 .area{
   display:flex;
-  margin-top:60px;
   width:100%;
 }
 
@@ -57,6 +57,9 @@ h1, h2, h3, h4, h5, h6{
 
 
 @media only screen and (min-width:300px) and (max-width:600px){
+  .area{
+    margin-top:60px;
+  }
   h1{
     font-size:28px;
   }
