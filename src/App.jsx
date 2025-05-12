@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import MainArea from './components/main-area/MainArea';
 import Sidebar from './components/sidebar/Sidebar';
-import Nav from './components/nav/Nav';
+import Navbar from './components/navbar/Navbar';
 
 function App() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <div className="content-header">
-        <Nav/>
+        <Navbar/>
       </div>
       <div className="area">
         <div className="content-sidebar">
