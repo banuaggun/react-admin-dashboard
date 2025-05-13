@@ -1,0 +1,60 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width:100%;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 30px;
+  width:max-content;
+  max-width: 70vw;
+  height:auto;
+  right: 0;
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display:block;
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 5px;
+}
+
+.dropdown-menu li {
+  padding: 10px 5px;
+  cursor: pointer;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #cdcaca;
+}
+
+.dropdown-menu li div:last-child { 
+  margin-left: auto; /* Ekledik */ 
+}
+
+.dropdown-menu li:hover {
+  background-color: #f0f0f0;
+}
+
+@media only screen and (min-width:601px){
+  .dropdown-menu{
+    max-width:40vw;
+    right:0;
+    position:absolute;
+  }
+  .dropdown-menu ul li{
+    padding:10px 20px;
+  }
+}
