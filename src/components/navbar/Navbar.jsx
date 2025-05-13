@@ -1,9 +1,23 @@
 import React from 'react'
+import './navbar.css'
+import Navmessage from './Navmessage'
+import Navlogo from './Navlogo'
+import Navnotice from './Navnotice'
+import Navuser from './Navuser'
 
-const Navbar = () => {
+const Topbar = () => {
   return (
-    <div>Navbar</div>
+    <nav className='navbar'>
+      <div className="navbar-left">
+        <Navlogo />
+      </div>
+      <div className="navbar-right">
+        <Navnotice />
+        <Navmessage />
+        <Navuser />
+      </div>
+    </nav>
   )
 }
 
-export default Navbar
+export default Topbar
