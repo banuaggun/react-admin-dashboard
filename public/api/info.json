@@ -1,205 +1,4 @@
 {
-  "cards": [
-    {
-      "_id": 1,
-      "name": "Sales",
-      "amount": 145,
-      "icon": "ph ph-card",
-      "percantage": 0.12,
-      "active": true
-    },
-    {
-      "_id": 2,
-      "name": "Revenue",
-      "amount": 3246,
-      "icon": "ph ph-dollar",
-      "percantage": 0.08,
-      "active": false
-    },
-    {
-      "_id": 3,
-      "name": "Customers",
-      "amount": 1244,
-      "icon": "ph ph-people",
-      "percantage": -0.11,
-      "active": false
-    }
-  ],
-  "news": [
-    {
-      "_id": 1,
-      "img": "../assets/items/news-1.jpg",
-      "title": "Lorem ipsum",
-      "subtitle": "Lorem ipsum dolor sit amet...",
-      "category": "abc"
-    },
-    {
-      "_id": 2,
-      "img": "../assets/items/news-2.jpg",
-      "title": "Lorem ipsum",
-      "subtitle": "Lorem ipsum dolor sit amet...",
-      "category": "abc"
-    },
-    {
-      "_id": 3,
-      "img": "../assets/items/news-3.jpg",
-      "title": "Lorem ipsum",
-      "subtitle": "Lorem ipsum dolor sit amet...",
-      "category": "abc"
-    }
-  ],
-  "topselling": [
-    {
-      "_id": 1,
-      "preview": "src/assets/items/gokyuzu.jpg",
-      "name": "lorem ipsum colors",
-      "price": 59,
-      "sold": 70
-    },
-    {
-      "_id": 2,
-      "preview": "src/assets/items/gokyuzu.jpg",
-      "name": "lorem ipsum colors",
-      "price": 40,
-      "sold": 80
-    },
-    {
-      "_id": 3,
-      "preview": "src/assets/items/gokyuzu.jpg",
-      "name": "lorem ipsum colors",
-      "price": 59,
-      "sold": 70
-    },
-    {
-      "_id": 4,
-      "preview": "src/assets/items/product-2.jpg",
-      "name": "lorem ipsum colors",
-      "price": 59,
-      "sold": 70
-    },
-    {
-      "_id": 5,
-      "preview": "src/assets/items/gokyuzu.jpg",
-      "name": "lorem ipsum colors",
-      "price": 59,
-      "sold": 70
-    }
-  ],
-  "recentsales": [
-    {
-      "_id": 1,
-      "number": "#2457",
-      "customer": "brandon jacob",
-      "product": "at presentatium minu",
-      "price": 64,
-      "status": "Approved"
-    },
-    {
-      "_id": 2,
-      "number": "#2420",
-      "customer": "alisa jacob",
-      "product": "at presentatium minu",
-      "price": 64,
-      "status": "Pending"
-    },
-    {
-      "_id": 3,
-      "number": "#2457",
-      "customer": "brandon jacob",
-      "product": "at presentatium minu",
-      "price": 64,
-      "status": "Approved"
-    },
-    {
-      "_id": 4,
-      "number": "#2420",
-      "customer": "brandon jacob",
-      "product": "at presentatium minu",
-      "price": 82,
-      "status": "Rejected"
-    },
-    {
-      "_id": 5,
-      "number": "#2420",
-      "customer": "alisa jacob",
-      "product": "at presentatium minu",
-      "price": 147,
-      "status": "Pending"
-    }
-  ],
-  "recentactivity": [
-    {
-      "_id": 1,
-      "time": "34 min",
-      "color": "text-success",
-      "content": "Revenue increased by 15% this quarter.",
-      "highlight": "15% increase"
-    },
-    {
-      "_id": 2,
-      "time": "25 min",
-      "color": "text-primary",
-      "content": "New customer acquisition hit an all-time high.",
-      "highlight": ""
-    },
-    {
-      "_id": 3,
-      "time": "40 min",
-      "color": "text-danger",
-      "content": "Product returns have decreased by 5%.",
-      "highlight": "5% decrease"
-    },
-    {
-      "_id": 4,
-      "time": "30 min",
-      "color": "text-info",
-      "content": "Sales team closed 50 new deals this week.",
-      "highlight": ""
-    },
-    {
-      "_id": 5,
-      "time": "11 min",
-      "color": "text-warning",
-      "content": "Customer satisfaction rating improved by 10%.",
-      "highlight": "10% improvement"
-    },
-    {
-      "_id": 6,
-      "time": "20 min",
-      "color": "text-muted",
-      "content": "Product inventory is at optimal levels.",
-      "highlight": ""
-    },
-    {
-      "_id": 7,
-      "time": "15 min",
-      "color": "text-success",
-      "content": "Employee productivity rose by 8% this month.",
-      "highlight": "8% increase"
-    }
-  ],
-  "sidebar": [
-    {
-      "id": 1,
-      "icon": "ph-fill ph-diamonds-four",
-      "text": "Dashboard"
-    },
-    {
-      "id": 2,
-      "icon": "ph-fill ph-shapes",
-      "text": "products"
-    },
-    {
-      "id": 3,
-      "icon": "ph-fill ph-users-three",
-      "text": "customers"
-    },
-    {
-      "id": 4,
-      "icon": "ph-fill ph-gear-six",
-      "text": "settings"
-    }
-  ],
   "notices": [
     {
       "id": 1,
@@ -261,6 +60,172 @@
       "id": 3,
       "name": "This Year",
       "value": "this_year"
+    }
+  ],
+
+  "sidebar": [
+    {
+      "id": 1,
+      "icon": "ph-fill ph-diamonds-four",
+      "text": "Dashboard"
+    },
+    {
+      "id": 2,
+      "icon": "ph-fill ph-shapes",
+      "text": "products"
+    },
+    {
+      "id": 3,
+      "icon": "ph-fill ph-users-three",
+      "text": "customers"
+    },
+    {
+      "id": 4,
+      "icon": "ph-fill ph-gear-six",
+      "text": "settings"
+    }
+  ],
+
+  "cards": [
+    {
+      "_id": 1,
+      "name": "Sales",
+      "amount": 145,
+      "icon": "ph ph-card",
+      "percantage": 0.12,
+      "active": true
+    },
+    {
+      "_id": 2,
+      "name": "Revenue",
+      "amount": 3246,
+      "icon": "ph ph-dollar",
+      "percantage": 0.08,
+      "active": false
+    },
+    {
+      "_id": 3,
+      "name": "Customers",
+      "amount": 1244,
+      "icon": "ph ph-people",
+      "percantage": -0.11,
+      "active": false
+    }
+  ],
+  "recentactivity": [
+    {
+      "_id": 1,
+      "time": "34 min",
+      "color": "text-success",
+      "content": "Revenue increased by 15% this quarter.",
+      "highlight": "15% increase"
+    },
+    {
+      "_id": 2,
+      "time": "25 min",
+      "color": "text-info",
+      "content": "New customer acquisition hit an all-time high.",
+      "highlight": ""
+    },
+    {
+      "_id": 3,
+      "time": "40 min",
+      "color": "text-danger",
+      "content": "Product returns have decreased by 5%.",
+      "highlight": "5% decrease"
+    },
+    {
+      "_id": 4,
+      "time": "30 min",
+      "color": "text-info",
+      "content": "Sales team closed 50 new deals this week.",
+      "highlight": ""
+    },
+    {
+      "_id": 5,
+      "time": "11 min",
+      "color": "text-warning",
+      "content": "Customer satisfaction rating improved by 10%.",
+      "highlight": "10% improvement"
+    },
+    {
+      "_id": 6,
+      "time": "20 min",
+      "color": "text-muted",
+      "content": "Product inventory is at optimal levels.",
+      "highlight": ""
+    },
+    {
+      "_id": 7,
+      "time": "15 min",
+      "color": "text-success",
+      "content": "Employee productivity rose by 8% this month.",
+      "highlight": "8% increase"
+    }
+  ],
+  "recentsales": [
+    {
+      "_id": 1,
+      "number": "#2457",
+      "customer": "brandon jacob",
+      "product": "computer",
+      "price": 64,
+      "status": "Approved"
+    },
+    {
+      "_id": 2,
+      "number": "#2420",
+      "customer": "alisa jacob",
+      "product": "mouse",
+      "price": 64,
+      "status": "Pending"
+    },
+    {
+      "_id": 3,
+      "number": "#2457",
+      "customer": "brandon jacob",
+      "product": "Tablet Set",
+      "price": 64,
+      "status": "Approved"
+    },
+    {
+      "_id": 4,
+      "number": "#2420",
+      "customer": "brandon jacob",
+      "product": "Battery",
+      "price": 82,
+      "status": "Rejected"
+    },
+    {
+      "_id": 5,
+      "number": "#2420",
+      "customer": "alisa jacob",
+      "product": "Computer",
+      "price": 147,
+      "status": "Pending"
+    }
+  ],
+  "topselling": [
+    {
+      "_id": 1,
+      "preview": "src/assets/items/gokyuzu.jpg",
+      "name": "lorem ipsum",
+      "price": 59,
+      "sold": 70
+    },
+    {
+      "_id": 2,
+      "preview": "src/assets/items/gokyuzu.jpg",
+      "name": "lorem ipsum",
+      "price": 40,
+      "sold": 80
+    },
+    {
+      "_id": 3,
+      "preview": "src/assets/items/gokyuzu.jpg",
+      "name": "lorem ipsum",
+      "price": 59,
+      "sold": 70
     }
   ]
 }
