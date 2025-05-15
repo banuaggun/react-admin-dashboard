@@ -8,7 +8,7 @@ const PageTitle = ({page}) => {
         <ol className='breadcrumb'>
           <li className="breadcrumb-item">
             <a>
-              <i className='ph ph-door'></i>
+              <i className='ph-fill ph-house'></i>
               </a>
           </li>
           <li>
