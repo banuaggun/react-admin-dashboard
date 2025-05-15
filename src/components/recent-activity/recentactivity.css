@@ -1,67 +1,45 @@
 .recent{
-  flex:1;
-  box-sizing: border-box;
-  transition: all 0.3s ease;
-  display: flex;
-  justify-content: flex-start;
-  width:100%;
-  padding:16px 24px 0px 8px;
-}
-
-
-.recent-activity-body{
-  background-color:white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width:100%;
-  padding:8px 0 8px 8px;
-  border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: snow;
+  border-radius: 12px;
+  border:none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding:12px 24px;
 }
 
-.recent-activity-header{
+.recent-activity-body-header{
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  padding:16px;
 }
 
 .recent-title{
-  display: flex;
-  font-size: 1rem;
-  font-weight: bold;
-  padding-bottom: 8px;
+  color:#04083b;
+  font-weight: 600;
+  font-size:18px;
 }
 
-/* item detail */
+.recent-filter{
+  color:#666;
+}
+
+.recent-item{
+  padding:8px 0;
+}
+
 .activity-container{
-  background-color: white;
-  padding:0 12px 12px 8px;
   display: flex;
   align-items: center;
-}
-
-.activity-badge{
-  font-size: 1.2rem;
-  margin-right:12px;
-  width:5%;
-}
-
-.activity-time{
-  font-weight:bold;
-  margin-right:12px;
+  padding:8px 0;
 }
 
 .activity-content{
-  display: flex;
+  display:flex;
   flex-direction: column;
-  background-color: white;
-  box-shadow:0px 2px 4px rgba(0, 0, 0, 0.2);
-  border:2px solid rgba(0, 0, 0, 0.1);
-  border-radius:8px;
-  padding:4px 8px;
-  width:95%;
+  width:100%;
+  padding-left:4px;
 }
 
 .activity-detail{
@@ -72,5 +50,31 @@
 }
 
 .activity-highlight{
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+.activity-time{
   font-weight: bold;
+  letter-spacing: 0.2px;
+}
+
+.text-info{
+  color:#04083b;
+}
+
+.text-warning{
+  color:orange;
+}
+
+.text-danger{
+  color:red;
+}
+
+.text-success{
+  color:green;
+}
+
+.text-muted{
+  color:gray;
 }

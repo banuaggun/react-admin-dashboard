@@ -25,9 +25,10 @@ const RecentActivity = () => {
   return (
     <div className="recent">
       <div className="recent-activity-body">
-        <div className="recent-activity-header">
-          <div className="recent-title">
-            <span>Recent Activity | {filter} </span>
+        <div className="recent-activity-body-header">
+          <div>
+            <span className="recent-title">Recent Activity | <span className="recent-filter">
+            {filter} </span>  </span>
           </div>
 
           <div className="recent-filter">
@@ -39,6 +40,7 @@ const RecentActivity = () => {
           {items &&
             items.length > 0 &&
             items.map((item) => <RecentItem key={item._id} item={item} />)}
+           
         </div>
       </div>
     </div>
