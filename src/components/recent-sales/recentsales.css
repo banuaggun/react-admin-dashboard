@@ -1,47 +1,30 @@
-.sales{
-  flex:1;
-  box-sizing: border-box;
-  transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  width:100%;
-  padding:8px;
+.sales-body{
+    display: flex;
+    flex-direction: column;
+    background-color: snow;
+    border-radius: 12px;
+    border:none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding:12px 16px;
+    margin:30px 0;
 }
 
-.sales-content{
-  background-color:white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width:100%;
-  padding:8px;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-}
-
-.sales-content-filter{
-  display: flex;
-  justify-content: flex-end;
-}
-
-.sales-content-body{
-  width:100%;
-  padding:8px;
+.sales-body-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .sales-title{
-  display: flex;
-  font-size:1rem;
-  font-weight:bold;
-  padding-bottom:8px;
+    color: #04083b;
+    font-weight: 600;
+    font-size: 18px;
 }
 
-.badge-bg{
-  border-radius:12px;
-  font-weight:700;
-  font-size:1rem;
-  width:100px;
-  padding:2px 0;
-  display: flex;
-  align-items: center;
-  justify-content:center;
+.sales-filter{
+    color:#666;
+}
+
+.sales-table{
+    padding:8px 0;
 }

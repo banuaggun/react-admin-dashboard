@@ -1,40 +1,66 @@
-.recent-sales-table{
-  border:none;
-  border-collapse: collapse;
+.recent-sales-table {
+  width: 100%;
   margin: 0;
   padding: 0;
-  width: 100%;
   table-layout: fixed;
+  border: none;
+  border-collapse: collapse;
 }
 
-.recent-sales-table-header{
-  font-size:1rem;
+.recent-sales-table-header {
+  font-size: 1rem;
+}
+
+.recent-sales-table th{
+  color:#000;
 }
 
 table.recent-sales-table tr {
   background-color: #f8f8f8;
   border: none;
-  padding: .35em;
+  text-transform: capitalize;
 }
 
 table.recent-sales-table th,
 table.recent-sales-table td {
-  padding: .625em;
   text-align: left;
   /* text-align:center; */
 }
 
 table.recent-sales-table th {
-  font-size: .85em;
-  letter-spacing: .1em;
+  color:#000;
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
+.recent-sales-table td{
+  color:#04083b;
+}
 
+.badge-bg{
+  border-radius:8px;
+  font-weight:700;
+  font-size:1rem;
+  display: inline-flex;
+  justify-content: center;
+  width:100px;
+  padding:4px 0px;
+}
+.bg-success{
+  background-color:lightgreen;
+}
+.bg-warning{
+  background-color: khaki;
+}
+.bg-danger{
+  background-color: crimson;
+  color:white;
+}
 @media screen and (max-width: 600px) {
   table.recent-sales-table {
     border: 0;
   }
-  
+
   table.recent-sales-table thead {
     border: none;
     clip: rect(0 0 0 0);
@@ -45,28 +71,139 @@ table.recent-sales-table th {
     position: absolute;
     width: 1px;
   }
-  
+
   table.recent-sales-table tr {
     border-bottom: 3px solid #ddd;
     display: block;
-    margin-bottom: .625em;
+    margin-bottom: 0.625em;
+    padding: 0.35em;
   }
-  
+
+  table.recent-sales-table th, 
+  table.recent-sales-table td {
+  padding: 0.625em;
+}
+
   table.recent-sales-table td {
     border-bottom: 1px solid #ddd;
     display: block;
-    font-size: .8em;
+    font-size: 0.8em;
     text-align: right;
   }
-  
+
   table.recent-sales-table td::before {
     content: attr(data-label);
     float: left;
     font-weight: bold;
     text-transform: uppercase;
+    color:#000;
+  }
+
+  table.recent-sales-table tbody tr:last-child {
+    border-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .recent-sales-table thead {
+        display: none; /* Hides the header row */
+      }
+    .recent-sales-table tbody tr {
+      display: block;
+      padding:4px 0;
+      border-bottom: 3px solid #ddd;
+    }
+  
+    .recent-sales-table th {
+      display: block;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding:0;
+      color:#000;
+    }
+  
+    .recent-sales-table td {
+      display: block;
+      font-size: 1rem;
+      text-align: left;
+      position: relative;
+      padding:0;
+    }
+
+    table.recent-sales-table th, 
+    table.recent-sales-table td {
+        padding: 8px 0;
+    }
+  
+    .recent-sales-table td[data-label="customer"]::before,
+    .recent-sales-table td[data-label="product"]::before,
+    .recent-sales-table td[data-label="price"]::before,
+    .recent-sales-table td[data-label="status"]::before {
+      content: attr(data-label);
+      font-weight: bold;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom:4px;
+      color:#000;
+    }
+  
+    .recent-sales-table td[data-label="customer"],
+    .recent-sales-table td[data-label="product"] {
+      display: inline-block;
+      width: 48%;
+      vertical-align: top;
+    }
+  
+    .recent-sales-table td[data-label="price"],
+    .recent-sales-table td[data-label="status"] {
+      display: inline-block;
+      width: 48%;
+      text-align: left;
+      vertical-align: top;
+    }
+    .recent-sales-table tbody tr:last-child {
+        border-bottom: none;
+      }
   }
   
-  table.recent-sales-table td:last-child {
-    border-bottom: 0;
+@media only screen and (min-width:1025px) and (max-width:2600px){
+  .recent-sales-table thead tr, 
+  .recent-sales-table tbody tr {
+    display: grid;
+    grid-template-columns: 0.6fr 1.2fr 1fr 1fr 1fr;
+
+
+    text-align: left;
+    border-bottom: 3px solid #ddd;
+    
+  }
+
+  .recent-sales-table th {
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left !important;
+    padding:0;
+  }
+
+  .recent-sales-table td {
+    display: block;
+    font-size: 1rem;
+    text-align: left !important;
+    position: relative;
+    padding:0;
+  }
+
+  .recent-sales-table thead tr th,  
+  .recent-sales-table tbody tr td {
+  text-align: left !important;
+}
+
+  table.recent-sales-table th, 
+  table.recent-sales-table td {
+      padding: 8px 0;
+  }
+  .recent-sales-table tbody tr:last-child {
+    border-bottom: none;
   }
 }

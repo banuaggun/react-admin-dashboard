@@ -34,15 +34,13 @@ const RecentSalesTable = ({ items }) => {
           items.map((item) => (
             <tr key={item.id}>
               <th scope="row">
-                <a href="#">{item.number}</a>
+                <span>{item.number}</span>
               </th>
               <td data-label="customer" scope="row">
                 {item.customer}
               </td>
               <td data-label="product" scope="row">
-                <a href="#" className="text-primary">
                   {item.product}
-                </a>
               </td>
               <td data-label="price" scope="row">
                 ${item.price.toFixed(2)}

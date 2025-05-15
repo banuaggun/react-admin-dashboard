@@ -20,17 +20,21 @@ const RecentSales = () => {
   }, []);
   return (
     <div className='sales'>
-      <div className="sales-content">
-        <div className="sales-content-filter">
-          <CardFilter filterChange={handleFilterChange}/>
+      <div className="sales-body">
+        <div className="sales-body-header">
+
+          <div>
+            <span className='sales-title'>Recent Sales | </span>
+            <span className="sales-filter">{filter}</span>
+          </div>
+
+          <div>
+            <CardFilter filterChange={handleFilterChange}/>
+          </div>
+
         </div>
-        <div className="sales-content-body">
-          <div className="sales-title">
-            <span>Recent Sales | {filter}</span>
-          </div>
-          <div className="sales-table">
+        <div className="sales-table">
           <RecentSalesTable items={items} />
-          </div>
         </div>
       </div>
       
