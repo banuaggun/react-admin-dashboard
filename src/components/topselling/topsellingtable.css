@@ -1,0 +1,131 @@
+.top-selling-table {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  table-layout: fixed;
+  border: none;
+  border-collapse: collapse;
+}
+
+.top-selling-table-header {
+  font-size: 1rem;
+}
+
+.top-seling-table th {
+  color: #000;
+}
+
+table.top-selling-table tr {
+  background-color: #f8f8f8;
+  border: none;
+  text-transform: capitalize;
+}
+
+table.top-selling-table th,
+table.top-selling-table td {
+  text-align: left;
+  /* text-align:center; */
+}
+
+table.top-selling-table th {
+  color:#000;
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.top-selling-table td{
+  color:#04083b;
+}
+
+@media screen and (max-width: 1199px) {
+  table.top-selling-table {
+    border: 0;
+  }
+
+  table.top-selling-table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table.top-selling-table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+    padding: 0.35em;
+  }
+
+  table.top-selling-table th, 
+  table.top-selling-table td {
+  padding: 0.625em;
+}
+
+  table.top-selling-table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
+
+  table.top-selling-table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:#000;
+  }
+
+  table.top-selling-table tbody tr:last-child {
+    border-bottom: 0;
+  }
+}
+
+
+
+@media only screen and (min-width:1200px) and (max-width:2600px){
+  .top-selling-table thead tr, 
+  .top-selling-table tbody tr {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    padding:0 0 0 30px;
+    text-align: left;
+    border-bottom: 3px solid #ddd;
+    
+  }
+
+  .top-selling-table th {
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left !important;
+    padding:0;
+  }
+
+  .top-selling-table td {
+    display: block;
+    font-size: 1rem;
+    text-align: left !important;
+    position: relative;
+    padding:0;
+  }
+
+  .top-selling-table thead tr th,  
+  .top-selling-table tbody tr td {
+  text-align: left !important;
+}
+
+  table.top-selling-table th, 
+  table.top-selling-table td {
+      padding: 8px 0;
+  }
+  .top-selling-table tbody tr:last-child {
+    border-bottom: none;
+  }
+}
