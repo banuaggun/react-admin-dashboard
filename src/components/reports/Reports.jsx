@@ -11,23 +11,24 @@ const Reports = () => {
 
   return (
     <div className='reports'>
-      <div className="reports-content">
+      <div className="reports-body">
+        <div className="reports-body-header">
 
-        <div className="reports-content-filter">
-          <CardFilter filterChange={handleFilterChange} />
-        </div>
-
-        <div className="reports-content-body">
-
-          <div className="reports-title">
-            <span>Reports/{filter}</span>
+          <div>
+            <span className='reports-title'>Reports | </span>
+            <span className='reports-filter'>{filter}</span>
           </div>
 
-          <div className="reports-chart">
-            <ReportCharts/>
+          <div>
+            <CardFilter filterChange={handleFilterChange} />
           </div>
 
         </div>
+
+        <div className="reports-chart">
+          <ReportCharts/>
+        </div>
+
       </div>
     </div>
   )
