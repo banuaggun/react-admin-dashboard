@@ -1,11 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './mainarea.css';
-import Dashboard from '../../pages/dashboard/Dashboard';
+import Navbar from '../navbar/Navbar';
+import Sidebar from '../sidebar/Sidebar';
+import { Outlet } from 'react-router-dom';
 
-const MainArea = ({ isExpanded }) => {
+const MainArea = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsExpanded(!isExpanded);
+  };
+
+   console.log("MainArea isExpanded:", isExpanded);
   return (
     <main id="main" className="main">
-      <Dashboard isExpanded={isExpanded} />
+       <div className="content-header">
+        <Navbar />
+      </div>
+      <div className="area">
+        <div className="content-sidebar">
+          <Sidebar isExpanded={isExpanded} toggleSidebar={toggleSidebar} />
+        </div>
+        <div className={isExpanded ? "content-main" : "content-main-out"}>
+          <Outlet />
+        </div>
+      </div>
     </main>
   );
 };

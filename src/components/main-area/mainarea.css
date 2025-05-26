@@ -14,3 +14,39 @@
     overflow-x: hidden;
   }
 }
+
+.area{
+  display:flex;
+  margin-top:0;
+  width:100%;
+}
+
+
+.navbar-area{
+  position: absolute;
+  top:0px;
+}
+
+.area.content-sidebar{
+  margin-top:0px;
+  position: relative;
+}
+
+.content-main{
+  width:calc(100% - 240px);
+  background-color: ghostwhite;
+}
+
+.content-main-out{
+  width:100%;
+  background-color: ghostwhite;
+}
+
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0; /* Sidebar'ın content alanına etki etmemesi için */
+    z-index: 1;
+    position: relative;
+  }
+}
