@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './sidebar.css'
+import { Link } from 'react-router-dom'
 
 
 const Sidebar = () => {
@@ -34,17 +35,15 @@ const Sidebar = () => {
       </div>
       <div className="nav-menu">
         {items.map(({id, icon, text}) => (
-          <a href={id} className={isExpanded ? "menu-item" : "menu-item menu-item-nx"}>
+          <Link to={text} key={id} className={isExpanded ? "menu-item" : "menu-item menu-item-nx"}>
             <i className={icon}></i>
             {isExpanded && <span>{text}</span>}
             {!isExpanded && <p>{text}</p>}
-          </a>
+          </Link>
         ))}
       </div>
     </div>
-    <div className="nav-footer">
-      
-    </div>
+
     </>
   )
 }

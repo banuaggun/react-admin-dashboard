@@ -1,29 +1,29 @@
 import React, { useState } from 'react';
 import './App.css';
 import MainArea from './components/main-area/MainArea';
-import Sidebar from './components/sidebar/Sidebar';
 import Navbar from './components/navbar/Navbar';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Dashboard from './pages/dashboard/Dashboard';
+import Customers from './pages/customers/Customers';
 
 function App() {
   const [isExpanded, setIsExpanded] = useState(false);
-
-  const toggleSidebar = () => {
-    setIsExpanded(!isExpanded);
-  };
 
   return (
     <>
       <div className="content-header">
         <Navbar/>
       </div>
-      <div className="area">
-        <div className="content-sidebar">
-          <Sidebar isExpanded={isExpanded} toggleSidebar={toggleSidebar} />
-        </div>
-        <div className={isExpanded ? "content-main" : "content-main-out"}>
-          <MainArea isExpanded={isExpanded} />
-        </div>
-      </div>
+      
+      <BrowserRouter>
+        <Routes className='area'>
+          <Route path='/' element={<MainArea isExpanded={isExpanded}/>}>
+            <Route index element={<Dashboard/>}/>
+            <Route path='dashboard' element={<Dashboard/>}/>
+            <Route path='customers' element={<Customers/>}/>
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
