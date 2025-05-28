@@ -212,3 +212,9 @@ button:active {
     display: none;
   }
 }
+
+.menu-item.active, .menu-item-nx.active {
+  background-color: #04083b;
+  color: #e3f2fd;
+  transition: all 0.3s ease-in-out;
+}
