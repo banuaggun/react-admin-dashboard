@@ -12,17 +12,17 @@ const TopsellingTable = ({items}) => {
             </tr>
         </thead>
         <tbody>
-            {items && items.length > 0 && items.map((item) => (
+            {items?.length > 0 && items.map((item) => (
                 <tr key={item.id}>
                
                     <td data-label="name" scope='row'>
-                        {item.name}
+                        {item?.name}
                     </td>
                     <td data-label="price" scope='row'>
-                        ${item.price.toFixed(2)}
+                        ${item?.price.toFixed(2)}
                     </td>
                     <td data-label="sold" scope='row'>
-                        ${(item.price * item.sold).toLocaleString('en-US')} 
+                        ${(item?.price * item?.sold).toLocaleString('en-US')} 
                     </td>
                 </tr>
             ))}
