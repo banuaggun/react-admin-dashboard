@@ -1,27 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Dropdown from '../../functions/dropdown/Dropdown';
+import useFetchData from '../../functions/hooks/FetchData';
 
 const CardFilter = () => {
-  const [filters, setFilters] = useState([]);
+  
+  const {data, loading, error} = useFetchData('./api/info.json');
 
-  // Verileri çekmek için fetch fonksiyonu
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch('/api/info.json');
-        if (!response.ok) {
-          throw new Error('Veri çekme başarısız oldu');
-        }
-        const data = await response.json();
-        setFilters(data.filters); // Gelen veriyi state'e kaydet
-        console.log(data.filters); // Debug için loglama
-      } catch (error) {
-        console.error('Hata:', error);
-      }
-    };
-
-    fetchData();
-  }, []);
+  if (loading) return <p>Yükleniyor...</p>;
+  if (error) return <p>Hata: {error.message}</p>;
 
   return (
     <div className='filter'>
@@ -31,9 +17,9 @@ const CardFilter = () => {
             <i className="ph-fill ph-circles-three-plus"></i>
           </div>
         }
-        items={filters.map((filter) => ({
-          name: filter.name
-        }))}
+        items={data?.filters?.map((filter) => ({
+          name: filter.name || "Unknown Filter"
+        })) || []} // Eğer filtreler boşsa varsayılan boş array
       />
     </div>
   );

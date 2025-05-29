@@ -1,28 +1,11 @@
 import { useState, useEffect } from 'react';
 import CardFilter from '../card-filter/CardFilter';
 import './card.css';
+import useFetchData from '../../functions/hooks/FetchData';
 
 const Card = ({ card }) => {
   const [filter, setFilter] = useState('Today'); // Initial filter state
-  const [filters, setFilters] = useState([]); // Filters fetched dynamically
-
-  // Fetch filters dynamically from CardFilter
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch('/api/info.json');
-        if (!response.ok) {
-          throw new Error('Failed to fetch data');
-        }
-        const data = await response.json();
-        setFilters(data.filters); // Set filters dynamically
-      } catch (error) {
-        console.error('Error:', error);
-      }
-    };
-
-    fetchData();
-  }, []);
+  const {data, loading, error} = useFetchData('/api/info.json');
 
   const handleFilterChange = (selectedFilter) => {
     setFilter(selectedFilter);
@@ -34,12 +17,15 @@ const Card = ({ card }) => {
     Customers: 'ph-fill ph-users-three',
   };
 
+  if (loading) return <p>Yükleniyor...</p>;
+  if (error) return <p>Hata: {error.message}</p>;
+
   return (
     <div className='cards'>
       <div className="cards-content">
         {/* Filter dropdown */}
         <div className="cards-content-filter">
-          <CardFilter filterChange={handleFilterChange} filters={filters} />
+          <CardFilter filterChange={handleFilterChange} filters={data?.filters || []} />
         </div>
 
         {/* Card body */}
