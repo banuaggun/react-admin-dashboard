@@ -1,6 +1,6 @@
 import React from 'react';
-import Dropdown from '../../functions/dropdown/Dropdown';
-import useFetchData from '../../functions/hooks/FetchData';
+import Dropdown from '../../../functions/dropdown/Dropdown';
+import useFetchData from '../../../functions/hooks/FetchData';
 
 const CardFilter = () => {
   

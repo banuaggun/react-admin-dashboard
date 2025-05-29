@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import CardFilter from '../card-filter/CardFilter';
 import './card.css';
-import useFetchData from '../../functions/hooks/FetchData';
+import useFetchData from '../../../functions/hooks/FetchData';
 
 const Card = ({ card }) => {
   const [filter, setFilter] = useState('Today'); // Initial filter state
