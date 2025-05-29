@@ -2,7 +2,7 @@ import { useState } from "react";
 import CardFilter from "../card-filter/CardFilter";
 import "./recentactivity.css";
 import RecentItem from "./RecentItem";
-import useFetchData from "../../functions/hooks/FetchData"; // Hook'u import et
+import useFetchData from "../../../functions/hooks/FetchData"; // Hook'u import et
 
 const RecentActivity = () => {
   const [filter, setFilter] = useState("Today");
