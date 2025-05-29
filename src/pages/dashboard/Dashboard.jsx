@@ -1,11 +1,11 @@
 import {useEffect, useState} from "react";
 import "./dashboard.css";
 import PageTitle from "../../components/page-title/Pagetitle";
-import Card from "../../components/card/Card";
-import RecentActivity from "../../components/recent-activity/RecentActivity";
-import Reports from "../../components/reports/Reports";
-import RecentSales from "../../components/recent-sales/RecentSales";
-import Topselling from "../../components/topselling/Topselling";
+import Card from "../../components/dashboard-elements/card/Card";
+import RecentActivity from "../../components/dashboard-elements/recent-activity/RecentActivity";
+import Reports from "../../components/dashboard-elements/reports/Reports";
+import RecentSales from "../../components/dashboard-elements/recent-sales/RecentSales";
+import Topselling from "../../components/dashboard-elements/topselling/Topselling";
 
 const Dashboard = ({ isExpanded }) => {
   const [cards, setCards] = useState([]);
