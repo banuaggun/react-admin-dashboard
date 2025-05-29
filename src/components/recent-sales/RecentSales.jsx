@@ -1,23 +1,20 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import CardFilter from '../card-filter/CardFilter'
 import './recentsales.css'
 import RecentSalesTable from './RecentSalesTable'
+import useFetchData from "../../functions/hooks/FetchData"; // Custom Hook'u import et
 
 const RecentSales = () => {
-  const [items, setItems] = useState([]);
   const [filter, setFilter] = useState('Today');
+  const {data: items, loading, error} = useFetchData("/api/info.json"); // Hook'u kullan
+
   const handleFilterChange = filter => {
     setFilter(filter);
   };
 
-  const fetchData = () => {
-    fetch('../api/info.json').then(res => res.json()).then(item => {
-      setItems(item.recentsales);
-    }).catch(e => console.log(e.message))
-  };
-  useEffect(() => {
-    fetchData();
-  }, []);
+  if (loading) return <p>Yükleniyor...</p>;
+  if (error) return <p>Hata: {error.message}</p>;
+
   return (
     <div className='sales'>
       <div className="sales-body">
@@ -34,7 +31,7 @@ const RecentSales = () => {
 
         </div>
         <div className="sales-table">
-          <RecentSalesTable items={items} />
+          <RecentSalesTable items={items.recentsales} />
         </div>
       </div>
       

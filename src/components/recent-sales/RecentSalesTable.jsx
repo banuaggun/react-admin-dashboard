@@ -6,13 +6,10 @@ const RecentSalesTable = ({ items }) => {
     switch (status) {
       case "Approved":
         return "success";
-        break;
       case "Pending":
         return "warning";
-        break;
       case "Rejected":
         return "danger";
-        break;
       default:
         return "success";
     }
@@ -29,26 +26,25 @@ const RecentSalesTable = ({ items }) => {
         </tr>
       </thead>
       <tbody>
-        {items &&
-          items.length > 0 &&
+        {items?.length > 0 &&
           items.map((item) => (
             <tr key={item.id}>
               <th scope="row">
-                <span>{item.number}</span>
+                <span>{item?.number}</span>
               </th>
               <td data-label="customer" scope="row">
-                {item.customer}
+                {item?.customer}
               </td>
               <td data-label="product" scope="row">
-                  {item.product}
+                  {item?.product}
               </td>
               <td data-label="price" scope="row">
-                ${item.price.toFixed(2)}
+                ${item?.price?.toFixed(2) || "N/A"}
               </td>
               <td data-label="status" scope="row">
                 <span className="badge--bg">
-                  <span className={`badge-bg bg-${handleStatus(item.status)}`}>
-                    {item.status}
+                  <span className={`badge-bg bg-${handleStatus(item?.status)}`}>
+                    {item?.status}
                   </span>
                 </span>
               </td>
