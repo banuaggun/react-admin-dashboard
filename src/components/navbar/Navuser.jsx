@@ -1,23 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Dropdown from "../../functions/dropdown/Dropdown";
 import './navbar.css';
+import useFetchData from "../../functions/hooks/FetchData";
 
 function Navuser() {
-  const [userInfo, setUserInfo] = useState(null);
+  const { data, loading, error } = useFetchData("/api/info.json");
 
-  useEffect(() => {
-    fetch("/api/info.json")
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        return response.json();
-      })
-      .then((data) => {
-        setUserInfo(data.userInfo);
-      })
-      .catch((error) => console.error("Error fetching user info data:", error));
-  }, []);
+  if (loading) return <p>Yükleniyor...</p>;
+  if (error) return <p>Hata: {error.message}</p>;
 
   return (
     <div>
@@ -27,11 +17,11 @@ function Navuser() {
             <i className="ph-fill ph-user"></i>
           </div>
         }
-        items={userInfo ? [{
+        items={data?.userInfo ? [{
           content: (
             <div>
-              <p><strong>Name:</strong> {userInfo.name}</p>
-              <p><strong>Email:</strong> {userInfo.email}</p>
+              <p><strong>Name:</strong> {data.userInfo.name || "Unknown"}</p>
+              <p><strong>Email:</strong> {data.userInfo.email || "No email provided"}</p>
             </div>
           )
         }] : []}

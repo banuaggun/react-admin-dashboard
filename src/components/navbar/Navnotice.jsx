@@ -1,16 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Dropdown from "../../functions/dropdown/Dropdown";
 import './navbar.css';
+import useFetchData from "../../functions/hooks/FetchData";
 
 function Navnotice() {
-  const [notices, setNotices] = useState([]);
-
-  useEffect(() => {
-    fetch("/api/info.json")
-      .then((response) => response.json())
-      .then((data) => setNotices(data.notices))
-      .catch((error) => console.error("Error fetching notices data:", error));
-  }, []);
+  const {data, loading, error} = useFetchData("/api/info.json");
+  
+  if (loading) return <p>Yükleniyor...</p>;
+  if (error) return <p>Hata: {error.message}</p>;
 
   return (
     <div className="navbar-notice">
@@ -21,11 +18,10 @@ function Navnotice() {
             <span className="badge badge-notice">4</span>
           </div>
         }
-        items={notices.map((notice) => ({
-          title: notice.title,
-          text: notice.text,
-          time: notice.time,
-        }))}
+        items={data?.notices?.map((notice) => ({
+          title: notice.title || "No title", 
+          text: notice.text || "No content available",  time: notice.time || "Unknown time",
+        })) || []}
       />
     </div>
   );
