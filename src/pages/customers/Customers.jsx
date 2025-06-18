@@ -13,11 +13,11 @@ const Customers = ({ isExpanded }) => {
 
   return (
     <section aria-label="customers" className={`dashboard ${isExpanded ? "sidebar-close" : "sidebar-open"}`}>
-      <div className="row-1">
+      <div className="row-1 customers-body">
         <PageTitle page="Customers" />
       </div>
 
-      <div className="customers">
+      <div className="customers-table">
         <CustomerTable items={items.customers} />
     
       </div>
