@@ -1,31 +1,41 @@
 import React from "react";
+import './customer-table.css';
 
-const CustomerTable = ({ customer }) => {
-  if (!customer) return null; // Eğer müşteri tanımlı değilse, hiçbir şey render etme
+const CustomerTable = ({ items }) => {
 
   return (
-    <div className="customer-container">
-      <table border="1" style={{ width: "100%", textAlign: "left", borderCollapse: "collapse" }}>
-        <thead>
+      <table className="customer-table">
+        <thead className="customer-table-head">
           <tr>
-            <th>Name</th>
-            <th>Amount</th>
-            <th>Product</th>
-            <th>Payment</th>
-            <th>Installments</th>
+            <th scope="col">Name</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Product</th>
+            <th scope="col">Payment</th>
+            <th scope="col">Installments</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>{customer.customer_name}</td>
-            <td>{customer.spending} USD</td>
-            <td>{customer.product}</td>
-            <td>{customer.payment_type}</td>
-            <td>{customer.installments_left}</td>
-          </tr>
+          {items?.length > 0 && items.map((item) => (
+            <tr key={item.id}>
+              <td scope="row">
+                <span>{item?.customer_name}</span>
+              </td>
+              <td data-label="spending" scope="row">
+                {item?.spending}
+              </td>
+              <td data-label="product" scope="row">
+                {item?.product}
+              </td>
+              <td data-label="payment_type" scope="row">
+                {item?.payment_type}
+              </td>
+              <td data-label="installments_left" scope="row">
+                {item?.installments_left}
+              </td>
+            </tr>
+          ))}
         </tbody>
       </table>
-    </div>
   );
 };
 

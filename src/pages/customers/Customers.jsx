@@ -1,10 +1,11 @@
 import React from "react";
 import PageTitle from "../../components/page-title/Pagetitle";
 import CustomerTable from "../../components/customer-elements/customer-table/CustomerTable"; 
-import useFetchData from "../../functions/hooks/FetchData"; // Hook'u import et
+import useFetchData from "../../functions/hooks/FetchData";
+import './customers.css';
 
 const Customers = ({ isExpanded }) => {
-  const { data: customers, loading, error } = useFetchData("/api/info.json"); 
+  const { data: items, loading, error } = useFetchData("/api/info.json"); 
 
   // Veriyi getirme sürecini yönet
   if (loading) return <p>Yükleniyor...</p>;
@@ -16,10 +17,9 @@ const Customers = ({ isExpanded }) => {
         <PageTitle page="Customers" />
       </div>
 
-      <div className="row-2">
-        {customers?.customers?.map((customer) => ( // Müşteri listesini CustomerItem'a gönderiyoruz
-          <CustomerTable key={customer.id} customer={customer} />
-        ))}
+      <div className="customers">
+        <CustomerTable items={items.customers} />
+    
       </div>
     </section>
   );
