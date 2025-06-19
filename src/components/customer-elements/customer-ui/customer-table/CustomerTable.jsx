@@ -1,7 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
+import CustomerDetail from '../customer-detail/CustomerDetail';
 import './customer-table.css';
 
 const CustomerTable = ({ items }) => {
+  const [detail, setDetail] = useState('Personal Information');
+
+  const handleDetailChange = detail => {
+    setDetail(detail);
+  };
 
   return (
       <table className="customer-table">
@@ -11,6 +17,7 @@ const CustomerTable = ({ items }) => {
             <th scope="col">Amount</th>
             <th scope="col">Payment</th>
             <th scope="col">Installments</th>
+            <th scope="col"></th>
           </tr>
         </thead>
         <tbody>
@@ -27,6 +34,9 @@ const CustomerTable = ({ items }) => {
               </td>
               <td data-label="installments left" scope="row">
                 {item?.installments_left}
+              </td>
+              <td>
+                <CustomerDetail detailChange={handleDetailChange} />
               </td>
             </tr>
           ))}
