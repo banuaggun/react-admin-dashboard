@@ -1,8 +1,8 @@
 import React from "react";
 import PageTitle from "../../components/page-title/Pagetitle";
-import CustomerTable from "../../components/customer-elements/customer-table/CustomerTable"; 
 import useFetchData from "../../functions/hooks/FetchData";
 import './customers.css';
+import CustomerLayout from "../../components/customer-elements/customer-layout/CustomerLayout";
 
 const Customers = ({ isExpanded }) => {
   const { data: items, loading, error } = useFetchData("/api/info.json"); 
@@ -18,7 +18,7 @@ const Customers = ({ isExpanded }) => {
       </div>
 
       <div className="customers-table">
-        <CustomerTable items={items.customers} />
+        <CustomerLayout/>
     
       </div>
     </section>
