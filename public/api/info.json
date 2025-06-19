@@ -469,5 +469,22 @@
       "payment_type": "Cash",
       "installments_left": 0
     }
+  ],
+  "details": [
+    {
+      "id": 1,
+      "name": "Personal Information",
+      "value": "personal_information"
+    },
+    {
+      "id": 2,
+      "name": "Payments",
+      "value": "payments"
+    },
+    {
+      "id": 3,
+      "name": "Transactions",
+      "value": "transactions"
+    }
   ]
 }
