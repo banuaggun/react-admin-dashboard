@@ -229,247 +229,307 @@
     }
   ],
   "customers": [
+  {
+    "id": 1,
+    "customer_name": "John Doe",
+    "email": "john.doe@example.com",
+    "phone": "0555 123 4567",
+    "spending": 1250,
+    "product": "Smartphone",
+    "payment_type": "Installments",
+    "installments_left": 5
+  },
+  {
+    "id": 2,
+    "customer_name": "Emily Carter",
+    "email": "emily.carter@example.com",
+    "phone": "0555 123 0002",
+    "spending": 3200,
+    "product": "Laptop",
+    "payment_type": "Cash",
+    "installments_left": 0
+  },
+  {
+    "id": 3,
+    "customer_name": "Michael Smith",
+    "email": "michael.smith@example.com",
+    "phone": "0555 123 0003",
+    "spending": 850,
+    "product": "Headphones",
+    "payment_type": "Cash",
+    "installments_left": 0
+  },
+  {
+    "id": 4,
+    "customer_name": "Sophia Johnson",
+    "email": "sophia.johnson@example.com",
+    "phone": "0555 123 0004",
+    "spending": 2000,
+    "product": "Tablet",
+    "payment_type": "Installments",
+    "installments_left": 3
+  },
+  {
+    "id": 5,
+    "customer_name": "Daniel Brown",
+    "email": "daniel.brown@example.com",
+    "phone": "0555 123 0005",
+    "spending": 1600,
+    "product": "Monitor",
+    "payment_type": "Cash",
+    "installments_left": 0
+  },
+  {
+    "id": 6,
+    "customer_name": "Olivia Wilson",
+    "email": "olivia.wilson@example.com",
+    "phone": "0555 123 0006",
+    "spending": 720,
+    "product": "Keyboard",
+    "payment_type": "Installments",
+    "installments_left": 2
+  },
+  {
+    "id": 7,
+    "customer_name": "James Anderson",
+    "email": "james.anderson@example.com",
+    "phone": "0555 123 0007",
+    "spending": 980,
+    "product": "Mouse",
+    "payment_type": "Cash",
+    "installments_left": 0
+  },
+  {
+    "id": 8,
+    "customer_name": "Ella Martinez",
+    "email": "ella.martinez@example.com",
+    "phone": "0555 123 0008",
+    "spending": 2500,
+    "product": "Gaming PC",
+    "payment_type": "Installments",
+    "installments_left": 10
+  },
+  {
+    "id": 9,
+    "customer_name": "William Hernandez",
+    "email": "william.hernandez@example.com",
+    "phone": "0555 123 0009",
+    "spending": 460,
+    "product": "USB Drive",
+    "payment_type": "Cash",
+    "installments_left": 0
+  },
+  {
+    "id": 10,
+    "customer_name": "Isabella Taylor",
+    "email": "isabella.taylor@example.com",
+    "phone": "0555 123 0010",
+    "spending": 1850,
+    "product": "Wireless Speaker",
+    "payment_type": "Installments",
+    "installments_left": 4
+  },
+  {
+    "id": 11,
+    "customer_name": "David Clark",
+    "email": "david.clark@example.com",
+    "phone": "0555 123 0011",
+    "spending": 2350,
+    "product": "Smart TV",
+    "payment_type": "Cash",
+    "installments_left": 0
+  },
+  {
+    "id": 12,
+    "customer_name": "Mia Davis",
+    "email": "mia.davis@example.com",
+    "phone": "0555 123 0012",
+    "spending": 950,
+    "product": "Gaming Chair",
+    "payment_type": "Installments",
+    "installments_left": 6
+  },
+  {
+    "id": 13,
+    "customer_name": "Benjamin Lee",
+    "email": "benjamin.lee@example.com",
+    "phone": "0555 123 0013",
+    "spending": 1750,
+    "product": "Camera",
+    "payment_type": "Cash",
+    "installments_left": 0
+  },
+  {
+    "id": 14,
+    "customer_name": "Natalie Garcia",
+    "email": "natalie.garcia@example.com",
+    "phone": "0555 123 0014",
+    "spending": 1200,
+    "product": "Smartwatch",
+    "payment_type": "Installments",
+    "installments_left": 3
+  },
+  {
+    "id": 15,
+    "customer_name": "Christopher Hall",
+    "email": "christopher.hall@example.com",
+    "phone": "0555 123 0015",
+    "spending": 850,
+    "product": "Desk Lamp",
+    "payment_type": "Cash",
+    "installments_left": 0
+  },
+  {
+    "id": 16,
+    "customer_name": "Elizabeth Adams",
+    "email": "elizabeth.adams@example.com",
+    "phone": "0555 123 0016",
+    "spending": 2200,
+    "product": "Refrigerator",
+    "payment_type": "Installments",
+    "installments_left": 8
+  },
+  {
+    "id": 17,
+    "customer_name": "Ryan Scott",
+    "email": "ryan.scott@example.com",
+    "phone": "0555 123 0017",
+    "spending": 1100,
+    "product": "Wireless Earbuds",
+    "payment_type": "Cash",
+    "installments_left": 0
+  },
+  {
+    "id": 18,
+    "customer_name": "Hannah White",
+    "email": "hannah.white@example.com",
+    "phone": "0555 123 0018",
+    "spending": 1400,
+    "product": "Microwave",
+    "payment_type": "Installments",
+    "installments_left": 5
+  },
+  {
+    "id": 19,
+    "customer_name": "Andrew Nelson",
+    "email": "andrew.nelson@example.com",
+    "phone": "0555 123 0019",
+    "spending": 600,
+    "product": "Portable Charger",
+    "payment_type": "Cash",
+    "installments_left": 0
+  },
+  {
+    "id": 20,
+    "customer_name": "Charlotte Robinson",
+    "email": "charlotte.robinson@example.com",
+    "phone": "0555 123 0020",
+    "spending": 2700,
+    "product": "Gaming Laptop",
+    "payment_type": "Installments",
+    "installments_left": 12
+  },
+  {
+    "id": 21,
+    "customer_name": "Ethan Thomas",
+    "email": "ethan.thomas@example.com",
+    "phone": "0555 123 0021",
+    "spending": 1900,
+    "product": "Projector",
+    "payment_type": "Installments",
+    "installments_left": 7
+  },
+  {
+    "id": 22,
+    "customer_name": "Ava Green",
+    "email": "ava.green@example.com",
+    "phone": "0555 123 0022",
+    "spending": 1750,
+    "product": "Home Theater System",
+    "payment_type": "Cash",
+    "installments_left": 0
+  },
+  {
+    "id": 23,
+    "customer_name": "Matthew Wright",
+    "email": "matthew.wright@example.com",
+    "phone": "0555 123 0023",
+    "spending": 2150,
+    "product": "Electric Scooter",
+    "payment_type": "Installments",
+    "installments_left": 9
+  },
+  {
+    "id": 24,
+    "customer_name": "Madison Baker",
+    "email": "madison.baker@example.com",
+    "phone": "0555 123 0024",
+    "spending": 980,
+    "product": "Noise Cancelling Headphones",
+    "payment_type": "Cash",
+    "installments_left": 0
+  },
+  {
+    "id": 25,
+    "customer_name": "Nathan King",
+    "email": "nathan.king@example.com",
+    "phone": "0555 123 0025",
+    "spending": 1650,
+    "product": "Smart Doorbell",
+    "payment_type": "Installments",
+    "installments_left": 0
+  },
     {
-      "id": 1,
-      "customer_name": "John Doe",
-      "spending": 1250,
-      "product": "Smartphone",
-      "payment_type": "Installments",
-      "installments_left": 5
-    },
-    {
-      "id": 2,
-      "customer_name": "Emily Carter",
-      "spending": 3200,
-      "product": "Laptop",
-      "payment_type": "Cash",
-      "installments_left": 0
-    },
-    {
-      "id": 3,
-      "customer_name": "Michael Smith",
-      "spending": 850,
-      "product": "Headphones",
-      "payment_type": "Cash",
-      "installments_left": 0
-    },
-    {
-      "id": 4,
-      "customer_name": "Sophia Johnson",
-      "spending": 2000,
-      "product": "Tablet",
-      "payment_type": "Installments",
-      "installments_left": 3
-    },
-    {
-      "id": 5,
-      "customer_name": "Daniel Brown",
-      "spending": 1600,
-      "product": "Monitor",
-      "payment_type": "Cash",
-      "installments_left": 0
-    },
-    {
-      "id": 6,
-      "customer_name": "Olivia Wilson",
-      "spending": 720,
-      "product": "Keyboard",
-      "payment_type": "Installments",
-      "installments_left": 2
-    },
-    {
-      "id": 7,
-      "customer_name": "James Anderson",
-      "spending": 980,
-      "product": "Mouse",
-      "payment_type": "Cash",
-      "installments_left": 0
-    },
-    {
-      "id": 8,
-      "customer_name": "Ella Martinez",
-      "spending": 2500,
-      "product": "Gaming PC",
-      "payment_type": "Installments",
-      "installments_left": 10
-    },
-    {
-      "id": 9,
-      "customer_name": "William Hernandez",
-      "spending": 460,
-      "product": "USB Drive",
-      "payment_type": "Cash",
-      "installments_left": 0
-    },
-    {
-      "id": 10,
-      "customer_name": "Isabella Taylor",
-      "spending": 1850,
-      "product": "Wireless Speaker",
-      "payment_type": "Installments",
-      "installments_left": 4
-    },
-    {
-      "id": 11,
-      "customer_name": "David Clark",
-      "spending": 2350,
-      "product": "Smart TV",
-      "payment_type": "Cash",
-      "installments_left": 0
-    },
-    {
-      "id": 12,
-      "customer_name": "Mia Davis",
-      "spending": 950,
-      "product": "Gaming Chair",
-      "payment_type": "Installments",
-      "installments_left": 6
-    },
-    {
-      "id": 13,
-      "customer_name": "Benjamin Lee",
-      "spending": 1750,
-      "product": "Camera",
-      "payment_type": "Cash",
-      "installments_left": 0
-    },
-    {
-      "id": 14,
-      "customer_name": "Natalie Garcia",
-      "spending": 1200,
-      "product": "Smartwatch",
-      "payment_type": "Installments",
-      "installments_left": 3
-    },
-    {
-      "id": 15,
-      "customer_name": "Christopher Hall",
-      "spending": 850,
-      "product": "Desk Lamp",
-      "payment_type": "Cash",
-      "installments_left": 0
-    },
-    {
-      "id": 16,
-      "customer_name": "Elizabeth Adams",
-      "spending": 2200,
-      "product": "Refrigerator",
-      "payment_type": "Installments",
-      "installments_left": 8
-    },
-    {
-      "id": 17,
-      "customer_name": "Ryan Scott",
-      "spending": 1100,
-      "product": "Wireless Earbuds",
-      "payment_type": "Cash",
-      "installments_left": 0
-    },
-    {
-      "id": 18,
-      "customer_name": "Hannah White",
-      "spending": 1400,
-      "product": "Microwave",
-      "payment_type": "Installments",
-      "installments_left": 5
-    },
-    {
-      "id": 19,
-      "customer_name": "Andrew Nelson",
-      "spending": 600,
-      "product": "Portable Charger",
-      "payment_type": "Cash",
-      "installments_left": 0
-    },
-    {
-      "id": 20,
-      "customer_name": "Charlotte Robinson",
-      "spending": 2700,
-      "product": "Gaming Laptop",
-      "payment_type": "Installments",
-      "installments_left": 12
-    },
-    {
-      "id": 21,
-      "customer_name": "Ethan Thomas",
-      "spending": 1900,
-      "product": "Projector",
-      "payment_type": "Installments",
-      "installments_left": 7
-    },
-    {
-      "id": 22,
-      "customer_name": "Ava Green",
-      "spending": 1750,
-      "product": "Home Theater System",
-      "payment_type": "Cash",
-      "installments_left": 0
-    },
-    {
-      "id": 23,
-      "customer_name": "Matthew Wright",
-      "spending": 2150,
-      "product": "Electric Scooter",
-      "payment_type": "Installments",
-      "installments_left": 9
-    },
-    {
-      "id": 24,
-      "customer_name": "Madison Baker",
-      "spending": 980,
-      "product": "Noise Cancelling Headphones",
-      "payment_type": "Cash",
-      "installments_left": 0
-    },
-    {
-      "id": 25,
-      "customer_name": "Nathan King",
-      "spending": 1650,
-      "product": "Smart Doorbell",
-      "payment_type": "Installments",
-      "installments_left": 4
-    },
-    {
-      "id": 26,
-      "customer_name": "Lily Torres",
-      "spending": 750,
-      "product": "External Hard Drive",
-      "payment_type": "Cash",
-      "installments_left": 0
-    },
-    {
-      "id": 27,
-      "customer_name": "Jacob Cooper",
-      "spending": 2050,
-      "product": "Drone",
-      "payment_type": "Installments",
-      "installments_left": 6
-    },
-    {
-      "id": 28,
-      "customer_name": "Samantha Evans",
-      "spending": 1350,
-      "product": "E-Reader",
-      "payment_type": "Cash",
-      "installments_left": 0
-    },
-    {
-      "id": 29,
-      "customer_name": "Dylan Parker",
-      "spending": 2750,
-      "product": "VR Headset",
-      "payment_type": "Installments",
-      "installments_left": 11
-    },
-    {
-      "id": 30,
-      "customer_name": "Grace Ramirez",
-      "spending": 950,
-      "product": "Bluetooth Sound System",
-      "payment_type": "Cash",
-      "installments_left": 0
-    }
-  ],
+    "id": 26,
+    "customer_name": "Lily Torres",
+    "email": "lily.torres@example.com",
+    "phone": "0555 123 0026",
+    "spending": 750,
+    "product": "External Hard Drive",
+    "payment_type": "Cash",
+    "installments_left": 0
+  },
+  {
+    "id": 27,
+    "customer_name": "Jacob Cooper",
+    "email": "jacob.cooper@example.com",
+    "phone": "0555 123 0027",
+    "spending": 2050,
+    "product": "Drone",
+    "payment_type": "Installments",
+    "installments_left": 6
+  },
+  {
+    "id": 28,
+    "customer_name": "Samantha Evans",
+    "email": "samantha.evans@example.com",
+    "phone": "0555 123 0028",
+    "spending": 1350,
+    "product": "E-Reader",
+    "payment_type": "Cash",
+    "installments_left": 0
+  },
+  {
+    "id": 29,
+    "customer_name": "Dylan Parker",
+    "email": "dylan.parker@example.com",
+    "phone": "0555 123 0029",
+    "spending": 2750,
+    "product": "VR Headset",
+    "payment_type": "Installments",
+    "installments_left": 11
+  },
+  {
+    "id": 30,
+    "customer_name": "Grace Ramirez",
+    "email": "grace.ramirez@example.com",
+    "phone": "0555 123 0030",
+    "spending": 950,
+    "product": "Bluetooth Sound System",
+    "payment_type": "Cash",
+    "installments_left": 0
+  }
+],
   "details": [
     {
       "id": 1,
