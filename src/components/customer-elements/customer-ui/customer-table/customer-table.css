@@ -1,15 +1,17 @@
 .customer-table-wrapper {
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
   gap: 20px;
 }
 
 .left-panel {
   flex: 1;
+  margin-right:80px;
 }
 
 .right-panel {
-  width: 600px;
+  width:100%;
   min-height: 200px;
   background: green;
   border-left: 1px solid #ddd;
@@ -17,17 +19,13 @@
   transform: translateX(100%);
   transition: transform 0.3s ease;
   position: relative;
-  margin-left:400px;
-  z-index:9999;
-
+  z-index: 9999;
 }
 
 .right-panel.open {
   transform: translateX(0%);
   box-shadow: -4px 0 12px rgba(0,0,0,0.1);
 }
-
-
 
 
 .customer-table{
@@ -38,6 +36,7 @@
     text-align: left;
     border-collapse: collapse;
     border:none;
+    background-color: hotpink;
 }
 
 .customer-table th{
