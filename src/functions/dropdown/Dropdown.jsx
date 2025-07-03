@@ -7,7 +7,6 @@ const Dropdown = ({ icon, items }) => {
 
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
-    console.log('çalıştı');
   };
 
   const handleClickOutside = (event) => {
@@ -25,27 +24,19 @@ const Dropdown = ({ icon, items }) => {
 
   return (
     <div className="dropdown" ref={dropdownRef}>
-      <div className="icon" onClick={toggleDropdown}>
+      <div className="dropdown-icon" onClick={toggleDropdown}>
         {icon}
       </div>
       {dropdownOpen && (
-        <div className="dropdown-menu">
-          <ul>
-            {items.map((item, index) => (
-              <li key={index}> 
-                <div>
-                <h4>{item.title || item.sender}</h4> 
-                <p>{item.text || item.content}</p> 
-                <a href="#">{item.name}</a>
-                </div>
-                <div>
-                {item.time && <small>{item.time}</small>} 
-                </div>
-              </li>
-            
-            ))}
-          </ul>
-        </div>
+        <ul className="dropdown-menu">
+          {items.map((item, index) => (
+            <li key={index}>
+              <div className="dropdown-item" onClick={item.onClick}>
+                {item.name}
+              </div>
+            </li>
+          ))}
+        </ul>
       )}
     </div>
   );
