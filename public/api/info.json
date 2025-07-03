@@ -546,5 +546,22 @@
       "name": "Transactions",
       "value": "transactions"
     }
+  ],
+  "columns": [
+    { 
+      "id":1,
+      "name": "Amount", 
+      "value": "amount" 
+    },
+    { 
+      "id":2,
+      "name": "Payment", 
+      "value": "payment" 
+    },
+    { 
+      "id":3,
+      "name": "Installments", 
+      "value": "installment" 
+    }
   ]
 }
