@@ -1,0 +1,24 @@
+.personal-info-card {
+  background: white;
+  color: black;
+  padding: 20px;
+  border: 1px solid red;
+}
+
+
+
+.personal-info-card h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #333;
+}
+
+.personal-info-card p {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.personal-info-card strong {
+  color: #222;
+}
