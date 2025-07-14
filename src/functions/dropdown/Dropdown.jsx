@@ -32,7 +32,35 @@ const Dropdown = ({ icon, items }) => {
           {items.map((item, index) => (
             <li key={index}>
               <div className="dropdown-item" onClick={item.onClick}>
-                {item.name}
+                <div className="dropdown-item-customer">
+
+                  <p>
+                    {item.name && <p>{item.name}</p>}
+                  </p>
+
+                  <h4>
+                    {item.title && <p>{item.title}</p>}
+                  </h4>
+                  <p>
+                    {item.text && <p>{item.text}</p>}
+                  </p>
+                  <p>
+                    {item.time && <small>{item.time}</small>}
+                  </p>
+
+                  <h4>
+                    {item.sender && <p>{item.sender}</p>}
+                  </h4>
+                  <p>
+                    {item.content && <p>{item.content}</p>}
+                  </p>
+                 </div>
+                
+                  
+                 
+                 
+                 
+                 
               </div>
             </li>
           ))}
