@@ -55,11 +55,14 @@ const CustomerTable = ({ items }) => {
           </tbody>
         </table>
 
-        <Pagination
+        <div className="customer-table-pagination">
+          <Pagination
           currentPage={currentPage}
           totalPages={totalPages}
           onPageChange={setCurrentPage}
         />
+        </div>
+        
       </div>
 
       <div
