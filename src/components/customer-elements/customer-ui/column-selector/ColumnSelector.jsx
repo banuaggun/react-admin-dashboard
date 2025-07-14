@@ -1,6 +1,7 @@
 import React from 'react';
 import Dropdown from '../../../../functions/dropdown/Dropdown';
 import useFetchData from '../../../../functions/hooks/FetchData';
+import './column-selector.css';
 
 const ColumnSelector = ({ selectedColumn, onSelectColumn }) => {
   const { data, loading, error } = useFetchData('/api/info.json');
@@ -19,8 +20,8 @@ const ColumnSelector = ({ selectedColumn, onSelectColumn }) => {
   return (
     <Dropdown
       icon={
-        <div className="icon-container dropdown-label">
-             <span className="selected-column-label">{selectedLabel}</span>
+        <div className="icon-container-selector dropdown-label">
+          <span className="selected-column-label">{selectedLabel}</span>
           <i className="ph-fill ph-caret-down icon-detail"></i>
          
         </div>
