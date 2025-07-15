@@ -1,56 +1,81 @@
 import React from "react";
-import './pagination.css';
+import "./pagination.css";
 
 const Pagination = ({ currentPage, totalPages, onPageChange }) => {
-  const generatePageNumbers = () => {
-    const pages = [];
-    
-    // İlk sayfa her zaman gösterilir
-    pages.push(1);
-   
+  const pages = [];
 
-    // Eğer 2. veya daha düşük bir sayfa varsa direkt 1 2 3 ... formatını göster
-    if (currentPage < 3) {
-      pages.push(2);
-      pages.push(3);
-      if (totalPages > 4) pages.push("...");
-    } else {
-      // Eğer 3 veya üzerindeyse, önce "..." ekleyelim (kaymaya başlayacak)
-      if (currentPage > 3) pages.push("...");
-
-      // Aktif sayfa ve çevresindeki sayfalar (örneğin 3 4 5)
-      for (let i = Math.max(3, currentPage); i <= Math.min(totalPages - 1, currentPage + 2); i++) {
-        pages.push(i);
-      }
-
-      // Eğer sayfa sayısı hala son sayfadan uzaktaysa "..." ekleyelim
-      if (currentPage + 2 < totalPages) pages.push("...");
+  // Dinamik yapı: 6 sayfa için ellipsisli görünüm
+  if (currentPage <= 3) {
+    pages.push(2, 3, 4);
+    pages.push("ellipsis");
+  } else if (currentPage >= 4) {
+    pages.push(2);
+    pages.push("ellipsis");
+    pages.push(currentPage - 1);
+    if (currentPage !== totalPages && currentPage !== 1) {
+      pages.push(currentPage);
     }
+    if (currentPage + 1 < totalPages) {
+      pages.push(currentPage + 1);
+    }
+  }
 
-    // Son sayfa her zaman gösterilir
-    pages.push(totalPages);
-
-    return pages;
-  };
+  const showLastPage = !pages.includes(totalPages);
 
   return (
-    <div className="pagination">
-            <button disabled={currentPage === 1} onClick={() => onPageChange(1)}>First</button>
-      <button disabled={currentPage === 1} onClick={() => onPageChange(currentPage - 1)}>Prev</button>
-      
-      {generatePageNumbers().map((page, index) => (
-        <button 
-          key={index} 
-          disabled={page === "..." || page === currentPage} 
-          className={page === currentPage ? "active" : ""}
-          onClick={() => typeof page === "number" && onPageChange(page)}
-        >
-          {page}
-        </button>
-      ))}
+    <div className="pagination__container">
+      {/* Geri Butonu */}
+      <button
+        className="pagination__control"
+        onClick={() => onPageChange(currentPage - 1)}
+        disabled={currentPage === 1}
+      >
+        <i className="ph-fill ph-caret-left"></i>
+      </button>
 
-      <button disabled={currentPage === totalPages} onClick={() => onPageChange(currentPage + 1)}>Next</button>
-            <button disabled={currentPage === totalPages} onClick={() => onPageChange(totalPages)}>Last</button>
+      <div className="pagination__center">
+        {/* Sayfa 1 */}
+        <button
+          className={`pagination__page${currentPage === 1 ? " pagination__page__active" : ""}`}
+          onClick={() => onPageChange(1)}
+        >
+          1
+        </button>
+
+        {/* Orta sayfalar */}
+        {pages.map((page, idx) =>
+          page === "ellipsis" ? (
+            <span key={`ellipsis-${idx}`} className="pagination__dots">...</span>
+          ) : (
+            <button
+              key={`page-${page}`}
+              onClick={() => onPageChange(page)}
+              className={`pagination__page${page === currentPage ? " pagination__page__active" : ""}`}
+            >
+              {page}
+            </button>
+          )
+        )}
+
+        {/* Son Sayfa */}
+        {showLastPage && (
+          <button
+            className={`pagination__page${currentPage === totalPages ? " pagination__page__active" : ""}`}
+            onClick={() => onPageChange(totalPages)}
+          >
+            {totalPages}
+          </button>
+        )}
+      </div>
+
+      {/* İleri Butonu */}
+      <button
+        className="pagination__control"
+        onClick={() => onPageChange(currentPage + 1)}
+        disabled={currentPage === totalPages}
+      >
+        <i className="ph-fill ph-caret-right"></i>
+      </button>
     </div>
   );
 };
