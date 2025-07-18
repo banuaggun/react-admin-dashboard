@@ -1,24 +1,73 @@
 .personal-info-card {
-  background: white;
-  color: black;
-  padding: 20px;
-  border: 1px solid red;
+  background-color: white;
+  width:100%;
+  padding:16px 12px;
+  margin-bottom:40px;
+  border:1px solid rgba(204, 204, 204, 0.5);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+}
+
+.personal-info-card-row-1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.personal-info-card-row-2{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin:16px 0;
+}
+
+.personal-info-card-row-3{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.personal-info-card-row-1 button, .personal-info-card-row-3 button{
+  background-color: #e3f2fd;
+  box-shadow: -2px 2px 3px rgba(18, 18, 65, 0.4);
+  border:none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:6px 12px 6px 8px;
+  border-radius: 2px;
+  font-weight: 600;
+  color:#04083b;
 }
 
 
+.personal-info-card-row-1 button i, .personal-info-card-row-3 button i{
+  font-size:18px;
+  margin-right: 4px;
+  color:#04083b;
+}
 
-.personal-info-card h4 {
-  margin-bottom: 15px;
+.personal-info-card-row-1 span i{
+  font-size:24px;
+  color:#04083b;
+}
+
+.personal-info-card-row-2 h4 {
+  margin-bottom: 8px;
   font-size: 18px;
-  color: #333;
-}
-
-.personal-info-card p {
-  margin: 8px 0;
-  font-size: 14px;
-  color: #555;
-}
-
-.personal-info-card strong {
   color: #222;
 }
+
+.personal-info-card-row-2 h5{
+  font-size:16px;
+  color:#222;
+  margin:0 0 4px 0;
+}
+
+.personal-info-card-row-2 .customer-info {
+  margin: 4px 0;
+  font-size: 16px;
+  color: #444;
+}
+
+
