@@ -37,7 +37,7 @@ const CustomerTable = ({ items }) => {
             {paginatedItems.map((item) => (
               <tr key={item.id}>
                 <td>{item.customer_name}</td>
-                <td colSpan={3}>
+                <td>
                   {selectedColumn === "amount" && `$${item.spending}`}
                   {selectedColumn === "payment" && item.payment_type}
                   {selectedColumn === "installment" && item.installments_left}
@@ -57,12 +57,11 @@ const CustomerTable = ({ items }) => {
 
         <div className="customer-table-pagination">
           <Pagination
-          currentPage={currentPage}
-          totalPages={totalPages}
-          onPageChange={setCurrentPage}
-        />
+            currentPage={currentPage}
+            totalPages={totalPages}
+            onPageChange={setCurrentPage}
+          />
         </div>
-        
       </div>
 
       <div
@@ -71,7 +70,13 @@ const CustomerTable = ({ items }) => {
         }`}
       >
         {selectedAction === "Personal Information" && selectedCustomer && (
-          <PersonalInfo customer={selectedCustomer} />
+          <PersonalInfo
+            customer={selectedCustomer}
+            onClose={() => {
+              setSelectedCustomerId(null);
+              setSelectedAction(null);
+            }}
+          />
         )}
       </div>
     </div>
