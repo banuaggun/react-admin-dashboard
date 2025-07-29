@@ -21,6 +21,12 @@
   margin:16px 0;
 }
 
+.personal-info-card-row-2 h4{
+  border-bottom:2px solid #ccc;
+  width:max-content;
+  padding:0 8px 4px 8px;
+}
+
 .personal-info-card-row-3{
   display: flex;
   justify-content: flex-end;

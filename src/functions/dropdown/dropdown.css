@@ -10,7 +10,7 @@
 
 .dropdown-menu {
   position: absolute;
-  top: 30px;
+  top: 20px;
   width:max-content;
   max-width: 70vw;
   height:auto;
@@ -41,11 +41,9 @@
   border-bottom: 1px solid #cdcaca;
 }
 
-
 .dropdown-menu li p{
   font-weight: 500;
 }
-
 
 .dropdown-menu li:hover {
   background-color: #f0f0f0;
