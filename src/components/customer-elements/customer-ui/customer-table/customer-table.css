@@ -57,3 +57,18 @@
 .right-panel.open {
   display: flex;
 }
+
+
+@media only screen and (min-width:720px) and (max-width:1400px){
+  .customer-table-wrapper{
+    width:50%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+  }
+  .right-panel{
+    top:55px;
+    left:50%;
+    margin-left:20px;
+  }
+}
