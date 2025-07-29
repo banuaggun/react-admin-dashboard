@@ -1,6 +1,7 @@
 import React from 'react';
 import Dropdown from '../../../../functions/dropdown/Dropdown';
 import useFetchData from '../../../../functions/hooks/FetchData';
+import './customer-detail.css';
 
 const CustomerDetail = ({ onSelectDetail }) => {
   const { data, loading, error } = useFetchData('/api/info.json');
@@ -17,8 +18,8 @@ const CustomerDetail = ({ onSelectDetail }) => {
     <div className="filter">
       <Dropdown
         icon={
-          <div className="icon-container">
-            <i className="ph-fill ph-dots-three-circle icon-detail"></i>
+          <div className="icon-container icon-container-customer">
+            <i className="ph-fill ph-circles-three-plus icon-detail"></i>
           </div>
         }
         items={dropdownItems}
