@@ -64,20 +64,23 @@ const CustomerTable = ({ items }) => {
         </div>
       </div>
 
-      <div
-        className={`right-panel ${
-          selectedCustomer && selectedAction ? "open" : ""
-        }`}
-      >
-        {selectedAction === "Personal Information" && selectedCustomer && (
-          <PersonalInfo
-            customer={selectedCustomer}
-            onClose={() => {
-              setSelectedCustomerId(null);
-              setSelectedAction(null);
-            }}
-          />
-        )}
+      
+        <div
+          className={`right-panel ${
+            selectedCustomer && selectedAction ? "open" : ""
+          }`}
+        >
+          <div className="right-container">
+          {selectedAction === "Personal Information" && selectedCustomer && (
+            <PersonalInfo
+              customer={selectedCustomer}
+              onClose={() => {
+                setSelectedCustomerId(null);
+                setSelectedAction(null);
+              }}
+            />
+          )}
+        </div>
       </div>
     </div>
   );
